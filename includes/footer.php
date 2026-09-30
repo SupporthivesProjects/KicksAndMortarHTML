@@ -5,9 +5,10 @@
     </div>
     <div class="overlay"></div>
     <div class="footer-content" data-speed="0.4" data-pos="end">
+        
         <div class="talk">
-            <a href="mailto:hello@klicksandmortar.com" class="big is-inview" data-lines=""><span class="line"><span style="transition-delay: 0s;">Let's talk.</span></span></a>
-            <p class="ar is-inview" dir="auto" data-fade="">لنتحدث</p>
+            <a href="mailto:hello@klicksandmortar.com" class="big ulink" data-lines>Let's talk.</a>
+            <p class="ar" dir="auto" data-fade>لنتحدث</p>
         </div>
         <div class="fcols" data-fade>
         <div>
@@ -67,22 +68,6 @@
     <script src="uiframe/js/aos.js"></script>
     <script src="uiframe/js/home-js.js"></script>
     <script src="animationjs/motion.js"></script>
-
-    <script>
-      $(document).ready(function () {
-          $(".navbar-toggler").click(function () {
-              $(this).toggleClass("is-active");
-              $("header").toggleClass("header-is-active");
-
-              let logo = $("#logo");
-              if (logo.attr("src") === "./img/m-logo.svg") {
-                  logo.attr("src", "./img/c-logo.svg");
-              } else {
-                  logo.attr("src", "./img/m-logo.svg");
-              }
-          });
-      });
-    </script>
     <script>
         const header = document.querySelector('header');
         window.addEventListener('scroll', () => {
@@ -93,29 +78,6 @@
             }
         });
     </script>
-     <script>
-        const dropdownBtns = document.querySelectorAll(
-            '.dropdown-toggle-cur, .dropdown-toggle-cart'
-        );
-
-        function updateOverlay() {
-            const anyOpen =
-                document.querySelector('.dropdown-menu.show') !== null;
-
-            document.body.classList.toggle('dropdown-open', anyOpen);
-        }
-
-        dropdownBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                setTimeout(updateOverlay, 50);
-            });
-        });
-
-        document.addEventListener('click', () => {
-            setTimeout(updateOverlay, 50);
-        });
-    </script>
-
     <script>
       AOS.init();
     </script>

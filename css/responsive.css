@@ -60,3 +60,14 @@
 
 
 }
+@media only screen and (max-width: 600px) {
+
+    .footer-content {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        padding: 80px 24px 40px;
+        gap: 56px;
+    }
+}
