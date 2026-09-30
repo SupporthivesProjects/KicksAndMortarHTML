@@ -10,6 +10,7 @@
 
 /* ------------Animation---------------- */
 @import url("../animationcss/animation.css");
+@import url("../animationcss/page.css");
 /* --------- External Slider CSS --------- */
 
 @import url("./owl.carousel.min.css");
