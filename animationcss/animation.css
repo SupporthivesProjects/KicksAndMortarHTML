@@ -605,8 +605,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 	text-align: right;
 }
 
-.auth-form a {
-	text-decoration: underline;
+.auth-form .login-no,
+.auth-form .login-no a {
+	text-decoration: none;
+}
+
+.auth-form a.creat,
+.auth-form a.creat:hover,
+.auth-form a.creat:focus,
+.auth-form a.creat:visited {
+	text-decoration: underline !important;
 }
 
 .auth .consent>input {
