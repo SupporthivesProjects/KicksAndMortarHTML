@@ -22,7 +22,10 @@
 .faq_s2 .qgroup .label{
     width: fit-content;
 }
-
+.consent > input{
+    height: 20px !important;
+    width: 20px !important;
+}
 
 
 
