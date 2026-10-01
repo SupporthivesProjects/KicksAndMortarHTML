@@ -26,7 +26,7 @@
     height: 20px !important;
     width: 20px !important;
 }
-.contact_Write .split .field-wrap .ctl input::placeholder{
+.contact_Write .split .form .field-wrap .ctl input::placeholder{
     opacity: 0.5;
 }
 
