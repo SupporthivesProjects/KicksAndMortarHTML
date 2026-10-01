@@ -116,79 +116,300 @@
           <h2 class="h2 ser3_p5" data-lines>SEO packages</h2>
           <div class="term-heading">
             <p class="body mute ser3_p5">Three tiers, each on a fixed term. Choose a term and every price updates.</p>
-            <div class="term-selector" role="group" aria-label="Package term"><button data-term="1"
-                aria-pressed="false">1 month</button><button data-term="3" aria-pressed="true">3 months</button><button
-                data-term="6" aria-pressed="false">6 months</button><button data-term="12" aria-pressed="false">12
-                months</button></div>
+            <ul class="term-selector nav nav-tabs ser_nav" role="group" aria-label="Package term" id="myTab" role="tablist" >
+              <li class="nav-item" role="presentation">
+                <button class="nav-link ser_nav_btn active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">1 month</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link ser_nav_btn" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">3 months</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link ser_nav_btn" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">6 months</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link ser_nav_btn" id="contact2-tab" data-bs-toggle="tab" data-bs-target="#contact2-tab-pane" type="button" role="tab" aria-controls="contact2-tab-pane" aria-selected="false">12 months</button>
+              </li> 
+            </ul>
           </div>
         </div>
       </div>
-      <div class="package-grid indent" data-service="seo">
-        <article class="package-card " data-tier="0" data-fade>
-          <div class="package-head">
-            <h3 class="h3 ser3_p5">Bronze</h3>
-          </div>
-          <div>
-            <p class="h2 package-price ser3_p5" data-price>374</p>
-            <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
-          </div><button type="button" class="btn btn-p" data-add="seo:0"><span>Add to cart</span><img class="arrow"
-              src="./img/arrow.svg" alt=""></button>
-          <div class="figures">
-            <div class="figure"><strong>5</strong><span class="reg mute">keywords and phrases targeted</span></div>
-            <div class="figure"><strong>1</strong><span class="reg mute">blog post a month</span></div>
-            <div class="figure"><strong>3</strong><span class="reg mute">quality links a month</span></div>
-          </div>
-          <p class="small ser3_p5"><strong>Included:</strong></p>
-          <ul class="features ser4_ul">
-            <li><img src="./img/check.svg" alt="">National SEO</li>
-            <li><img src="./img/check.svg" alt="">SEO audit at onboarding</li>
-            <li><img src="./img/check.svg" alt="">Quarterly strategy call</li>
-          </ul>
-        </article>
-        <article class="package-card " data-tier="1" data-fade>
-          <div class="package-head">
-            <h3 class="h3 ser3_p5">Silver</h3>
-          </div>
-          <div>
-            <p class="h2 package-price ser3_p5" data-price>1129</p>
-            <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
-          </div><button type="button" class="btn btn-p" data-add="seo:1"><span>Add to cart</span><img class="arrow"
-              src="./img/arrow.svg" alt=""></button>
-          <div class="figures">
-            <div class="figure"><strong>15</strong><span class="reg mute">keywords and phrases targeted</span></div>
-            <div class="figure"><strong>2</strong><span class="reg mute">blog posts a month</span></div>
-            <div class="figure"><strong>8</strong><span class="reg mute">quality links a month</span></div>
-          </div>
-          <p class="small"><strong>Included:</strong></p>
-          <ul class="features ser4_ul">
-            <li><img src="./img/check.svg" alt="">AI search visibility (ChatGPT, AI Overviews)</li>
-            <li><img src="./img/check.svg" alt="">Schema markup and page speed fixes</li>
-            <li><img src="./img/check.svg" alt="">Quarterly SEO audit</li>
-            <li><img src="./img/check.svg" alt="">Monthly strategy call</li>
-          </ul>
-        </article>
-        <article class="package-card featured" data-tier="2" data-fade>
-          <div class="package-head">
-            <h3 class="h3 ser3_p5">Gold</h3><small>Most complete</small>
-          </div>
-          <div>
-            <p class="h2 package-price ser3_p5" data-price>2452</p>
-            <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
-          </div><button type="button" class="btn btn-p" data-add="seo:2"><span>Add to cart</span><img class="arrow"
-              src="./img/arrow.svg" alt=""></button>
-          <div class="figures">
-            <div class="figure"><strong>30</strong><span class="reg mute">keywords and phrases targeted</span></div>
-            <div class="figure"><strong>4</strong><span class="reg mute">blog posts a month</span></div>
-            <div class="figure"><strong>15</strong><span class="reg mute">quality links a month</span></div>
-          </div>
-          <p class="small ser3_p5"><strong>Included:</strong></p>
-          <ul class="features ser4_ul">
-            <li><img src="./img/check.svg" alt="">National and international SEO</li>
-            <li><img src="./img/check.svg" alt="">Digital PR and press releases</li>
-            <li><img src="./img/check.svg" alt="">Monthly SEO audit</li>
-            <li><img src="./img/check.svg" alt="">Fortnightly strategy call</li>
-          </ul>
-        </article>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="package-grid indent" data-service="seo">
+              <article class="package-card " data-tier="0" data-fade>
+                <div class="package-head">
+                  <h3 class="h3 ser3_p5">Bronze</h3>
+                </div>
+                <div>
+                  <p class="h2 package-price ser3_p5" data-price>$374</p>
+                  <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
+                </div><button type="button" class="btn btn-p" data-add="seo:0"><span>Add to cart</span><img class="arrow"
+                    src="./img/arrow.svg" alt=""></button>
+                <div class="figures">
+                  <div class="figure"><strong>5</strong><span class="reg mute">keywords and phrases targeted</span></div>
+                  <div class="figure"><strong>1</strong><span class="reg mute">blog post a month</span></div>
+                  <div class="figure"><strong>3</strong><span class="reg mute">quality links a month</span></div>
+                </div>
+                <p class="small ser3_p5"><strong>Included:</strong></p>
+                <ul class="features ser4_ul">
+                  <li><img src="./img/check.svg" alt="">National SEO</li>
+                  <li><img src="./img/check.svg" alt="">SEO audit at onboarding</li>
+                  <li><img src="./img/check.svg" alt="">Quarterly strategy call</li>
+                </ul>
+              </article>
+              <article class="package-card " data-tier="1" data-fade>
+                <div class="package-head">
+                  <h3 class="h3 ser3_p5">Silver</h3>
+                </div>
+                <div>
+                  <p class="h2 package-price ser3_p5" data-price>$1,129</p>
+                  <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
+                </div><button type="button" class="btn btn-p" data-add="seo:1"><span>Add to cart</span><img class="arrow"
+                    src="./img/arrow.svg" alt=""></button>
+                <div class="figures">
+                  <div class="figure"><strong>15</strong><span class="reg mute">keywords and phrases targeted</span></div>
+                  <div class="figure"><strong>2</strong><span class="reg mute">blog posts a month</span></div>
+                  <div class="figure"><strong>8</strong><span class="reg mute">quality links a month</span></div>
+                </div>
+                <p class="small"><strong>Included:</strong></p>
+                <ul class="features ser4_ul">
+                  <li><img src="./img/check.svg" alt="">AI search visibility (ChatGPT, AI Overviews)</li>
+                  <li><img src="./img/check.svg" alt="">Schema markup and page speed fixes</li>
+                  <li><img src="./img/check.svg" alt="">Quarterly SEO audit</li>
+                  <li><img src="./img/check.svg" alt="">Monthly strategy call</li>
+                </ul>
+              </article>
+              <article class="package-card featured" data-tier="2" data-fade>
+                <div class="package-head">
+                  <h3 class="h3 ser3_p5">Gold</h3><small>Most complete</small>
+                </div>
+                <div>
+                  <p class="h2 package-price ser3_p5" data-price>$2,452</p>
+                  <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
+                </div><button type="button" class="btn btn-p" data-add="seo:2"><span>Add to cart</span><img class="arrow"
+                    src="./img/arrow.svg" alt=""></button>
+                <div class="figures">
+                  <div class="figure"><strong>30</strong><span class="reg mute">keywords and phrases targeted</span></div>
+                  <div class="figure"><strong>4</strong><span class="reg mute">blog posts a month</span></div>
+                  <div class="figure"><strong>15</strong><span class="reg mute">quality links a month</span></div>
+                </div>
+                <p class="small ser3_p5"><strong>Included:</strong></p>
+                <ul class="features ser4_ul">
+                  <li><img src="./img/check.svg" alt="">National and international SEO</li>
+                  <li><img src="./img/check.svg" alt="">Digital PR and press releases</li>
+                  <li><img src="./img/check.svg" alt="">Monthly SEO audit</li>
+                  <li><img src="./img/check.svg" alt="">Fortnightly strategy call</li>
+                </ul>
+              </article>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="package-grid indent" data-service="seo">
+              <article class="package-card " data-tier="0" data-fade>
+                <div class="package-head">
+                  <h3 class="h3 ser3_p5">Bronze</h3>
+                </div>
+                <div>
+                  <p class="h2 package-price ser3_p5" data-price>$374</p>
+                  <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
+                </div><button type="button" class="btn btn-p" data-add="seo:0"><span>Add to cart</span><img class="arrow"
+                    src="./img/arrow.svg" alt=""></button>
+                <div class="figures">
+                  <div class="figure"><strong>5</strong><span class="reg mute">keywords and phrases targeted</span></div>
+                  <div class="figure"><strong>1</strong><span class="reg mute">blog post a month</span></div>
+                  <div class="figure"><strong>3</strong><span class="reg mute">quality links a month</span></div>
+                </div>
+                <p class="small ser3_p5"><strong>Included:</strong></p>
+                <ul class="features ser4_ul">
+                  <li><img src="./img/check.svg" alt="">National SEO</li>
+                  <li><img src="./img/check.svg" alt="">SEO audit at onboarding</li>
+                  <li><img src="./img/check.svg" alt="">Quarterly strategy call</li>
+                </ul>
+              </article>
+              <article class="package-card " data-tier="1" data-fade>
+                <div class="package-head">
+                  <h3 class="h3 ser3_p5">Silver</h3>
+                </div>
+                <div>
+                  <p class="h2 package-price ser3_p5" data-price>$1,129</p>
+                  <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
+                </div><button type="button" class="btn btn-p" data-add="seo:1"><span>Add to cart</span><img class="arrow"
+                    src="./img/arrow.svg" alt=""></button>
+                <div class="figures">
+                  <div class="figure"><strong>15</strong><span class="reg mute">keywords and phrases targeted</span></div>
+                  <div class="figure"><strong>2</strong><span class="reg mute">blog posts a month</span></div>
+                  <div class="figure"><strong>8</strong><span class="reg mute">quality links a month</span></div>
+                </div>
+                <p class="small"><strong>Included:</strong></p>
+                <ul class="features ser4_ul">
+                  <li><img src="./img/check.svg" alt="">AI search visibility (ChatGPT, AI Overviews)</li>
+                  <li><img src="./img/check.svg" alt="">Schema markup and page speed fixes</li>
+                  <li><img src="./img/check.svg" alt="">Quarterly SEO audit</li>
+                  <li><img src="./img/check.svg" alt="">Monthly strategy call</li>
+                </ul>
+              </article>
+              <article class="package-card featured" data-tier="2" data-fade>
+                <div class="package-head">
+                  <h3 class="h3 ser3_p5">Gold</h3><small>Most complete</small>
+                </div>
+                <div>
+                  <p class="h2 package-price ser3_p5" data-price>$2,452</p>
+                  <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
+                </div><button type="button" class="btn btn-p" data-add="seo:2"><span>Add to cart</span><img class="arrow"
+                    src="./img/arrow.svg" alt=""></button>
+                <div class="figures">
+                  <div class="figure"><strong>30</strong><span class="reg mute">keywords and phrases targeted</span></div>
+                  <div class="figure"><strong>4</strong><span class="reg mute">blog posts a month</span></div>
+                  <div class="figure"><strong>15</strong><span class="reg mute">quality links a month</span></div>
+                </div>
+                <p class="small ser3_p5"><strong>Included:</strong></p>
+                <ul class="features ser4_ul">
+                  <li><img src="./img/check.svg" alt="">National and international SEO</li>
+                  <li><img src="./img/check.svg" alt="">Digital PR and press releases</li>
+                  <li><img src="./img/check.svg" alt="">Monthly SEO audit</li>
+                  <li><img src="./img/check.svg" alt="">Fortnightly strategy call</li>
+                </ul>
+              </article>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+          <div class="package-grid indent" data-service="seo">
+              <article class="package-card " data-tier="0" data-fade>
+                <div class="package-head">
+                  <h3 class="h3 ser3_p5">Bronze</h3>
+                </div>
+                <div>
+                  <p class="h2 package-price ser3_p5" data-price>$374</p>
+                  <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
+                </div><button type="button" class="btn btn-p" data-add="seo:0"><span>Add to cart</span><img class="arrow"
+                    src="./img/arrow.svg" alt=""></button>
+                <div class="figures">
+                  <div class="figure"><strong>5</strong><span class="reg mute">keywords and phrases targeted</span></div>
+                  <div class="figure"><strong>1</strong><span class="reg mute">blog post a month</span></div>
+                  <div class="figure"><strong>3</strong><span class="reg mute">quality links a month</span></div>
+                </div>
+                <p class="small ser3_p5"><strong>Included:</strong></p>
+                <ul class="features ser4_ul">
+                  <li><img src="./img/check.svg" alt="">National SEO</li>
+                  <li><img src="./img/check.svg" alt="">SEO audit at onboarding</li>
+                  <li><img src="./img/check.svg" alt="">Quarterly strategy call</li>
+                </ul>
+              </article>
+              <article class="package-card " data-tier="1" data-fade>
+                <div class="package-head">
+                  <h3 class="h3 ser3_p5">Silver</h3>
+                </div>
+                <div>
+                  <p class="h2 package-price ser3_p5" data-price>$1,129</p>
+                  <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
+                </div><button type="button" class="btn btn-p" data-add="seo:1"><span>Add to cart</span><img class="arrow"
+                    src="./img/arrow.svg" alt=""></button>
+                <div class="figures">
+                  <div class="figure"><strong>15</strong><span class="reg mute">keywords and phrases targeted</span></div>
+                  <div class="figure"><strong>2</strong><span class="reg mute">blog posts a month</span></div>
+                  <div class="figure"><strong>8</strong><span class="reg mute">quality links a month</span></div>
+                </div>
+                <p class="small"><strong>Included:</strong></p>
+                <ul class="features ser4_ul">
+                  <li><img src="./img/check.svg" alt="">AI search visibility (ChatGPT, AI Overviews)</li>
+                  <li><img src="./img/check.svg" alt="">Schema markup and page speed fixes</li>
+                  <li><img src="./img/check.svg" alt="">Quarterly SEO audit</li>
+                  <li><img src="./img/check.svg" alt="">Monthly strategy call</li>
+                </ul>
+              </article>
+              <article class="package-card featured" data-tier="2" data-fade>
+                <div class="package-head">
+                  <h3 class="h3 ser3_p5">Gold</h3><small>Most complete</small>
+                </div>
+                <div>
+                  <p class="h2 package-price ser3_p5" data-price>$2,452</p>
+                  <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
+                </div><button type="button" class="btn btn-p" data-add="seo:2"><span>Add to cart</span><img class="arrow"
+                    src="./img/arrow.svg" alt=""></button>
+                <div class="figures">
+                  <div class="figure"><strong>30</strong><span class="reg mute">keywords and phrases targeted</span></div>
+                  <div class="figure"><strong>4</strong><span class="reg mute">blog posts a month</span></div>
+                  <div class="figure"><strong>15</strong><span class="reg mute">quality links a month</span></div>
+                </div>
+                <p class="small ser3_p5"><strong>Included:</strong></p>
+                <ul class="features ser4_ul">
+                  <li><img src="./img/check.svg" alt="">National and international SEO</li>
+                  <li><img src="./img/check.svg" alt="">Digital PR and press releases</li>
+                  <li><img src="./img/check.svg" alt="">Monthly SEO audit</li>
+                  <li><img src="./img/check.svg" alt="">Fortnightly strategy call</li>
+                </ul>
+              </article>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="contact2-tab-pane" role="tabpanel" aria-labelledby="contact2-tab" tabindex="0">
+          <div class="package-grid indent" data-service="seo">
+              <article class="package-card " data-tier="0" data-fade>
+                <div class="package-head">
+                  <h3 class="h3 ser3_p5">Bronze</h3>
+                </div>
+                <div>
+                  <p class="h2 package-price ser3_p5" data-price>$374</p>
+                  <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
+                </div><button type="button" class="btn btn-p" data-add="seo:0"><span>Add to cart</span><img class="arrow"
+                    src="./img/arrow.svg" alt=""></button>
+                <div class="figures">
+                  <div class="figure"><strong>5</strong><span class="reg mute">keywords and phrases targeted</span></div>
+                  <div class="figure"><strong>1</strong><span class="reg mute">blog post a month</span></div>
+                  <div class="figure"><strong>3</strong><span class="reg mute">quality links a month</span></div>
+                </div>
+                <p class="small ser3_p5"><strong>Included:</strong></p>
+                <ul class="features ser4_ul">
+                  <li><img src="./img/check.svg" alt="">National SEO</li>
+                  <li><img src="./img/check.svg" alt="">SEO audit at onboarding</li>
+                  <li><img src="./img/check.svg" alt="">Quarterly strategy call</li>
+                </ul>
+              </article>
+              <article class="package-card " data-tier="1" data-fade>
+                <div class="package-head">
+                  <h3 class="h3 ser3_p5">Silver</h3>
+                </div>
+                <div>
+                  <p class="h2 package-price ser3_p5" data-price>$1,129</p>
+                  <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
+                </div><button type="button" class="btn btn-p" data-add="seo:1"><span>Add to cart</span><img class="arrow"
+                    src="./img/arrow.svg" alt=""></button>
+                <div class="figures">
+                  <div class="figure"><strong>15</strong><span class="reg mute">keywords and phrases targeted</span></div>
+                  <div class="figure"><strong>2</strong><span class="reg mute">blog posts a month</span></div>
+                  <div class="figure"><strong>8</strong><span class="reg mute">quality links a month</span></div>
+                </div>
+                <p class="small"><strong>Included:</strong></p>
+                <ul class="features ser4_ul">
+                  <li><img src="./img/check.svg" alt="">AI search visibility (ChatGPT, AI Overviews)</li>
+                  <li><img src="./img/check.svg" alt="">Schema markup and page speed fixes</li>
+                  <li><img src="./img/check.svg" alt="">Quarterly SEO audit</li>
+                  <li><img src="./img/check.svg" alt="">Monthly strategy call</li>
+                </ul>
+              </article>
+              <article class="package-card featured" data-tier="2" data-fade>
+                <div class="package-head">
+                  <h3 class="h3 ser3_p5">Gold</h3><small>Most complete</small>
+                </div>
+                <div>
+                  <p class="h2 package-price ser3_p5" data-price>$2,452</p>
+                  <p class="small faint ser3_p5" data-term-copy>for a 3 month term</p>
+                </div><button type="button" class="btn btn-p" data-add="seo:2"><span>Add to cart</span><img class="arrow"
+                    src="./img/arrow.svg" alt=""></button>
+                <div class="figures">
+                  <div class="figure"><strong>30</strong><span class="reg mute">keywords and phrases targeted</span></div>
+                  <div class="figure"><strong>4</strong><span class="reg mute">blog posts a month</span></div>
+                  <div class="figure"><strong>15</strong><span class="reg mute">quality links a month</span></div>
+                </div>
+                <p class="small ser3_p5"><strong>Included:</strong></p>
+                <ul class="features ser4_ul">
+                  <li><img src="./img/check.svg" alt="">National and international SEO</li>
+                  <li><img src="./img/check.svg" alt="">Digital PR and press releases</li>
+                  <li><img src="./img/check.svg" alt="">Monthly SEO audit</li>
+                  <li><img src="./img/check.svg" alt="">Fortnightly strategy call</li>
+                </ul>
+              </article>
+            </div>
+        </div>
       </div>
       <p class="price-notice small indent ser3_p5" role="status"></p>
     </section>
@@ -263,5 +484,4 @@
       </div>
     </section>
 
-  
  <?php include 'includes/footer.php'; ?>
