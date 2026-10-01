@@ -110,6 +110,24 @@
     font-weight: 400;
     line-height: 140%;
 }
+.cur.is-open .cur-list {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+    width: 122px;
+    padding: 15px 15px;
+    gap: 16px;
+}
+.menu-content {
+    position: relative;
+    left: var(--pad);
+    top: calc(var(--u) * 411);
+    display: flex;
+    gap: calc(var(--u) * 72);
+    align-items: flex-start;
+    padding: 0px 0px;
+    margin-top: -2rem;
+}
 /* --------------------tc------------------------ */
 .col-lg1 .label-p  p{
     color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
@@ -352,4 +370,5 @@
 }
 .legal p{
     margin-bottom: 0px;
+
 }
