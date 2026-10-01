@@ -32,6 +32,9 @@
 .contact_Write .split .form .field-wrap .ctl textarea::placeholder{
     opacity: 0.5;
 }
+.contact_Write .split .form .field-wrap .ctl select .nulll::placeholder{
+    opacity: 0.5;
+}
 
 
 
