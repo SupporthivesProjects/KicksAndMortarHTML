@@ -1,0 +1,184 @@
+.desktop_nonet {
+    display: none;
+}
+
+.mobile_nonet {
+    display: block;
+}
+
+.t_card {
+    border: none;
+}
+
+.tirthak_alpha h1,
+.tirthak_alpha h2,
+.tirthak_alpha h3,
+.tirthak_alpha h4,
+.tirthak_alpha h5,
+.tirthak_alpha h6,
+.tirthak_alpha p {
+    margin-bottom: 0;
+}
+
+
+.tirthak_wrap .track-wrap,
+.tirthak_wrap .track-wrap .track,
+.tirthak_wrap .track-wrap .card {
+    touch-action: pan-y;
+}
+
+.tirthak_wrap .track-wrap .card,
+.tirthak_wrap .track-wrap .card img {
+    -webkit-user-drag: none;
+}
+
+.tirthak_wrap .track-wrap .card img {
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .mobile_nonet {
+        display: none;
+    }
+
+    .desktop_nonet {
+        display: block;
+    }
+
+    .dif_size1 {
+        font-size: 40px;
+    }
+
+    .dif_size2 {
+        font-size: 20px;
+    }
+
+    .diff_pading {
+        padding: 40px 24px;
+    }
+
+    .intro .media {
+        height: 400px;
+    }
+
+    .diff_paadding2 {
+        padding: 280px 24px 40px 24px;
+    }
+
+    .diff_bacgorund {
+        background: linear-gradient(0deg,
+                rgba(15, 15, 15, .95) 0%,
+                rgba(15, 15, 15, .7) 42%,
+                rgba(15, 15, 15, .15) 75%,
+                rgba(15, 15, 15, .05) 100%) !important;
+    }
+
+    .dif_gap {
+        gap: 24px;
+
+    }
+
+    .dif_margin_bto {
+        margin-bottom: -36px;
+    }
+
+    .dif_stylest {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 42px;
+    }
+
+    .dif_gap2 {
+        gap: 48px;
+    }
+
+    .dif_gap3 {
+        gap: 16px;
+    }
+
+    .dif_gap4 {
+        gap: 32px;
+    }
+
+    .t_card {
+        gap: 20px;
+    }
+
+    .dif_gap_dif {
+        gap: 32px;
+    }
+
+    .t_card small {
+        font-size: 14px !important;
+    }
+
+    .t_card h3 {
+        font-size: 24px !important;
+    }
+
+    .t_card p {
+        font-size: 18px !important;
+    }
+
+    .fontsize_unset {
+        font-size: 20px !important;
+    }
+
+    .tirth_card .qcard {
+        gap: 24px;
+        padding-top: 32px;
+    }
+
+    .tirth_steps .step {
+        gap: 32px;
+        padding: 32px 0;
+        flex-direction: column;
+    }
+
+    .tirth_steps small {
+        font-size: 14px !important;
+    }
+
+    .tirth_steps h3 {
+        font-size: 24px !important;
+    }
+
+    .tirth_steps p {
+        font-size: 18px !important;
+    }
+
+    .also_size h2 {
+        font-size: 32px;
+    }
+
+    .also_size p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 780px) and (max-width:991px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1151px) {}
+
+@media only screen and (min-width: 1152px) and (max-width:1279px) {}
+
+@media only screen and (min-width: 1280px) and (max-width:1348px) {}
+
+@media only screen and (min-width: 1349px) and (max-width:1439px) {}
+
+@media only screen and (min-width: 1440px) and (max-width:1499px) {}
+
+@media only screen and (min-width: 1500px) and (max-width:1599px) {}
+
+@media only screen and (min-width: 1600px) and (max-width:1699px) {}
+
+@media only screen and (min-width: 1700px) and (max-width:1799px) {}
+
+@media only screen and (min-width: 1800px) and (max-width:1919px) {}
+
+
+
+
+
+
+
