@@ -201,6 +201,9 @@ margin-bottom: 0%;
 .ser5_input:focus-visible {
     outline: 0cm !important;
 }
+.ser_bg {
+    position: absolute !important;
+}
 
 
 @media only screen and (max-width: 600px){
