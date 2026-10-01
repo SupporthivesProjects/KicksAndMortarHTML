@@ -137,10 +137,10 @@
           </div>
         </div>
       </div>
-      <div class="tab-content" id="myTabContent">
+      <div class="tab-content ser_tab_cont" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                     tabindex="0">
-          <div class="package-grid indent" data-service="reputation">
+          <div class="package-grid indent ser_tab_cont" data-service="reputation">
             <article class="package-card " data-tier="0" data-fade>
               <div class="package-head">
                 <h3 class="h3 ser3_p5">Bronze</h3>
@@ -212,7 +212,7 @@
         </div>
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
                     tabindex="0">
-          <div class="package-grid indent" data-service="reputation">
+          <div class="package-grid indent ser_tab_cont" data-service="reputation">
             <article class="package-card " data-tier="0" data-fade>
               <div class="package-head">
                 <h3 class="h3 ser3_p5">Bronze</h3>
@@ -284,7 +284,7 @@
         </div>
         <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
                     tabindex="0">
-          <div class="package-grid indent" data-service="reputation">
+          <div class="package-grid indent ser_tab_cont" data-service="reputation">
             <article class="package-card " data-tier="0" data-fade>
               <div class="package-head">
                 <h3 class="h3 ser3_p5">Bronze</h3>
@@ -356,7 +356,7 @@
         </div>
         <div class="tab-pane fade" id="contact2-tab-pane" role="tabpanel" aria-labelledby="contact2-tab"
                     tabindex="0">
-          <div class="package-grid indent" data-service="reputation">
+          <div class="package-grid indent ser_tab_cont" data-service="reputation">
             <article class="package-card " data-tier="0" data-fade>
               <div class="package-head">
                 <h3 class="h3 ser3_p5">Bronze</h3>
