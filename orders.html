@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Order history from klicksandmortar. Digital marketing with clear packages and fixed terms.">
+    <title>Order history | klicksandmortar</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="pages.css">
+    <script src="config.js"></script>
+    <script src="catalogue.js"></script>
+    <script src="store.js"></script>
+  </head>
+  <body data-page="orders"><a class="skip-link" href="#top">Skip to content</a>
+    <header class="nav" id="nav"><a href="index.html" class="logo">klicksandmortar</a>
+      <div class="nav-actions">
+        <div class="cur" id="cur"><button class="cur-btn" aria-haspopup="listbox" aria-expanded="false"><span id="curLabel">USD</span><svg viewbox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg></button>
+          <div class="cur-list" role="listbox"><button role="option" data-cur="USD" aria-current="true">USD</button><button role="option" data-cur="EUR">EUR</button><button role="option" data-cur="GBP">GBP</button></div>
+        </div><a href="login.html" class="login ulink">Log in</a><a href="cart.html" class="cart"><span class="ulink">Cart</span><sup>0</sup></a><button class="menu-btn" id="menuOpen" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span class="bars" aria-hidden="true"><i></i><i></i></span></button>
+      </div>
+    </header>
+    <div class="menu" id="menu" aria-hidden="true">
+      <div class="menu-bg"><img id="menuBg" alt=""></div>
+      <div class="nav-inner"><a href="index.html" class="logo">klicksandmortar</a>
+        <div class="nav-actions"><span class="cur-btn"><span class="curMirror">USD</span><svg viewbox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg></span><a href="login.html" class="login">Log in</a><a href="cart.html" class="cart"><span>Cart</span><sup>0</sup></a><button class="close" id="menuClose" aria-label="Close menu"><svg viewbox="0 0 28 28" fill="none" aria-hidden="true">
+              <path d="M4 4L24 24M24 4L4 24" stroke="#E0CCBB" stroke-width="1.2"></path>
+            </svg></button></div>
+      </div>
+      <div class="menu-content">
+        <div class="label on-dark" data-mfade style="color:var(--sand-70)">
+          <p>/ Menu</p>
+          <p class="ar" dir="auto" style="color:var(--sand-50)">القائمة</p>
+        </div>
+        <nav class="menu-links"><a href="index.html"><span class="line" style="--i:0"><span>Home</span></span></a><a href="index.html#services"><span class="line" style="--i:1"><span>Services</span></span><sup data-mfade>06</sup></a><a href="about.html"><span class="line" style="--i:2"><span>About</span></span></a><a href="process.html"><span class="line" style="--i:3"><span>Process</span></span></a><a href="faq.html"><span class="line" style="--i:4"><span>FAQ</span></span></a><a href="contact.html"><span class="line" style="--i:5"><span>Contact</span></span></a></nav>
+      </div>
+      <div class="menu-foot" data-mfade><a href="login.html" class="login mobile-account-link ulink">Log in</a>
+        <div class="mobile-currency" role="group" aria-label="Currency"><button type="button" data-menu-currency="USD">USD</button><button type="button" data-menu-currency="EUR">EUR</button><button type="button" data-menu-currency="GBP">GBP</button></div><a href="signup.html" class="ulink">Sign up</a><a href="mailto:hello@klicksandmortar.com" class="ulink">hello@klicksandmortar.com</a><a href="terms.html" class="ulink">Terms and Conditions</a><a href="privacy.html" class="ulink">Privacy Policy</a>
+      </div>
+    </div>
+    <main id="smooth">
+      <section class="account-header on-dark" data-section data-theme="dark" id="top">
+        <div class="media account-bg" data-inner data-speed-inner="0.28">
+          <picture>
+            <source media="(max-width: 899px)" srcset="assets/account-header-mobile.webp">
+            </source><img src="assets/account-header.webp" alt="Desert at sunset" decoding="async" fetchpriority="high" data-menubg>
+          </picture>
+        </div>
+        <div class="overlay"></div>
+        <div class="account-title">
+          <div class="label">
+            <p>/ Your account</p>
+            <p class="ar" lang="ar" dir="rtl">حسابك</p>
+          </div>
+          <h1 class="h1" data-lines data-hero>Order history.</h1>
+        </div>
+      </section>
+      <section class="account-body on-dark" data-section data-theme="dark">
+        <nav class="account-sidebar" aria-label="Account"><a href="account.html"><small>/ 01</small>Account details</a><a href="orders.html" aria-current="page"><small>/ 02</small>Order history</a><button data-signout><small>/ 03</small>Sign out</button></nav>
+        <div class="account-content">
+          <h2 class="h4">All orders</h2>
+          <p class="small mute">Every order with its packages and terms. Download the invoice for any order.</p>
+          <div id="orderHistory"></div>
+        </div>
+      </section>
+      <footer class="footer compact on-dark" data-section data-theme="dark">
+        <div class="media" data-inner data-speed-inner="0.6" style="--r:18%"><img src="assets/original-8a8a96ad4952a91c.webp" alt=""></div>
+        <div class="overlay"></div>
+        <div class="footer-content" data-speed="0.4" data-pos="end">
+          <div class="fcols" data-fade>
+            <div><span>Contact</span><a href="mailto:hello@klicksandmortar.com" class="ulink">hello@klicksandmortar.com</a>
+              <p>Dubai, United Arab Emirates</p>
+            </div>
+            <div><span>Services</span><a href="seo.html" class="ulink">SEO</a><a href="ppc.html" class="ulink">PPC</a><a href="social-media.html" class="ulink">Social Media</a><a href="email-marketing.html" class="ulink">Email Marketing</a><a href="web-design.html" class="ulink">Web Design</a><a href="reputation.html" class="ulink">Reputation</a></div>
+            <div><span>Company</span><a href="about.html" class="ulink">About</a><a href="process.html" class="ulink">Process</a><a href="faq.html" class="ulink">FAQ</a><a href="contact.html" class="ulink">Contact</a></div>
+            <div><span>Account</span><a href="login.html" class="ulink">Log in</a><a href="signup.html" class="ulink">Sign up</a><a href="cart.html" class="ulink">Cart</a></div>
+          </div>
+          <div class="fbottom" data-step>
+            <div class="legal">
+              <p>© 2026 klicksandmortar</p><a href="terms.html" class="ulink">Terms and Conditions</a><a href="privacy.html" class="ulink">Privacy Policy</a>
+            </div>
+            <div class="pay"><img src="assets/original-6b14679afb76fb39.svg" alt="Visa"><img src="assets/original-ad33cde48776b207.svg" alt="Mastercard"></div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <div id="spacer"></div>
+    <div class="sbar" id="sbar"><i></i></div>
+    <div class="toast" id="toast" role="status"></div>
+    <div id="veil" aria-hidden="true"></div>
+    <div id="progress" aria-hidden="true"></div>
+    <script src="commerce.js"></script>
+    <script src="motion.js"></script>
+  </body>
+</html>
