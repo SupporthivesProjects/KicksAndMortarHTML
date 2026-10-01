@@ -19,7 +19,9 @@
     padding-bottom: 32px;
     padding-top: 1px;
 }
-
+.faq_s2 .qgroup .label{
+    width: fit-content;
+}
 
 
 
