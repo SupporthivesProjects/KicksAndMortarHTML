@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/tg-icon.svg">
     <link rel="stylesheet" href="css/mainBase.css">
   </head>
-  <body data-page="terms">
+  <body data-page="home">
     <a class="skip-link d-none" href="#top">Skip to content</a>
      <header class="nav" id="nav">
    <a href="index.html" class="logo">klicksandmortar</a>
@@ -74,7 +74,7 @@
      </div>
      <nav class="menu-links">
        <a href="index.html">
-         <span class="line" style="--i:0">
+         <span class="line active" style="--i:0">
            <span>Home</span>
          </span>
        </a>
@@ -107,13 +107,21 @@
      </nav>
    </div>
    <div class="menu-foot" data-mfade>
-     <a href="login.html" class="login mobile-account-link ulink">Log in</a>
      <div class="mobile-currency" role="group" aria-label="Currency">
-       <button type="button" data-menu-currency="USD">USD</button>
-       <button type="button" data-menu-currency="EUR">EUR</button>
-       <button type="button" data-menu-currency="GBP">GBP</button>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            USD
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">USD</a></li>
+            <li><a class="dropdown-item" href="#">USD</a></li>
+            <li><a class="dropdown-item" href="#">USD</a></li>
+            <li><a class="dropdown-item" href="#">USD</a></li>
+          </ul>
+        </div>
+        <a href="login.html" class="login mobile-account-link ulink">Log in</a>
      </div>
-     <a href="signup.html" class="ulink">Sign up</a>
+      <a href="terms.html" class="ulink">Sign up</a>
      <a href="mailto:hello@klicksandmortar.com" class="ulink">hello@klicksandmortar.com</a>
      <a href="terms.html" class="ulink">Terms and Conditions</a>
      <a href="privacy.html" class="ulink">Privacy Policy</a>
