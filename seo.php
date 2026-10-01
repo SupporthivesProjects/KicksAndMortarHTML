@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
     <section class="service-hero ser_hero on-dark" data-section data-theme="dark" id="top">
-      <div class="media service-bg" data-inner data-speed-inner="0.28">
+      <div class="media service-bg ser_bg" data-inner data-speed-inner="0.28">
         <picture>
           <source media="(max-width: 899px)" srcset="./img/seo-hero-mobile.webp">
           </source><img class="ser_img" src="./img/seo-hero.webp" alt="Search engine optimisation" decoding="async"
