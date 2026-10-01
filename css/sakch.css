@@ -1,0 +1,312 @@
+.a-hero-p{
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+margin: 0px;
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+.a-hero-p-urdu{
+color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+margin: 0px;
+font-family: "Noto Sans Arabic";
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 160%; /* 25.6px */
+}
+.ab-h1{
+    color: var(--brand-sand, #E0CCBB);
+margin: 0px;
+font-family: "Hanken Grotesk";
+font-size: 200px;
+font-style: normal;
+font-weight: 300;
+line-height: 120%; /* 240px */
+letter-spacing: -6px;
+}
+.act-buttons{
+    margin-bottom: 40px;
+}
+.ab-p-txt{
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+margin:0px;
+font-family: "Hanken Grotesk";
+font-size: 20px;
+width: 100% !important;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 32px */
+}
+.line , .display .line{
+    margin-bottom:0px;
+    padding-bottom: 0px;
+}
+.a-btn-cream{
+    border: 1px solid var(--brand-sand, #E0CCBB);
+background: var(--brand-sand, #E0CCBB);
+display: flex;
+padding: 17px 30px;
+border-radius: 0px;
+align-items: center;
+height: 61px;
+gap: 16px;
+color: var(--brand-warm-black, #15120E);
+font-family: "Hanken Grotesk";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+}
+.a-border-btn{
+    display: flex;
+    padding: 0px;
+padding-bottom: 10px;
+align-items: center;
+gap: 16px;
+width: fit-content;
+border-radius: 0px;
+border-bottom: 1px solid var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+color: var(--brand-sand, #E0CCBB);
+font-family: "Hanken Grotesk";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+}
+.ahero .copy{
+    padding-bottom: 0px;
+}
+.ab-sec2{
+    padding: 104px 0px 160px 0px;
+}
+.ab-s2-h1{
+    color: var(--brand-sand, #E0CCBB);
+margin: 0px;
+font-family: "Hanken Grotesk";
+font-size: 72px;
+font-style: normal;
+font-weight: 300;
+line-height: 120%; /* 86.4px */
+letter-spacing: -1.44px;
+}
+.ab-s2-p{
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+margin: 0px;
+font-family: "Hanken Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; 
+}
+.ab-s2-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px 32px;
+    padding: 0px;
+    margin: 0px;
+}
+.ab-s2-items li{
+    border-top: 1px solid rgba(224, 204, 187, 0.20);
+    color: var(--brand-sand, #E0CCBB);
+font-family: "Hanken Grotesk";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 28.8px */
+}
+.a-s2-rp{
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+margin: 0px;
+font-family: "Hanken Grotesk";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 28.8px */
+}
+.int-e-p{
+    color: var(--brand-warm-black-70, rgba(21, 18, 14, 0.70));
+margin: 0px;
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+.int-arb{
+    color: var(--brand-warm-black-50, rgba(21, 18, 14, 0.50));
+margin: 0px;
+font-family: "Noto Sans Arabic";
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 160%; /* 25.6px */
+}
+.padding-adjust{
+    padding: 0px;
+}
+.ab-s3-h1{
+    color: var(--brand-warm-black, #15120E);
+margin: 0px;
+font-family: "Hanken Grotesk";
+font-size: 72px;
+font-style: normal;
+font-weight: 300;
+line-height: 120%; /* 86.4px */
+letter-spacing: -1.44px;
+}
+
+.ab-s3-p{
+    color: var(--brand-warm-black-70, rgba(21, 18, 14, 0.70));
+margin: 0px;
+font-family: "Hanken Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 32px */
+}
+.s3-item-no{
+    color: var(--brand-warm-black-50, rgba(21, 18, 14, 0.50));
+margin: 0px;
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+.s3-item-title{
+    color: var(--brand-warm-black, #15120E);
+margin: 0px;
+font-family: "Hanken Grotesk";
+font-size: 36px;
+font-style: normal;
+font-weight: 300;
+line-height: 120%; /* 43.2px */
+letter-spacing: -0.36px;
+}
+.s3-item-sub{
+    color: var(--brand-warm-black-70, rgba(21, 18, 14, 0.70));
+margin: 0px;
+font-family: "Hanken Grotesk";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 28.8px */
+}
+.ab-select-p{
+    color: var(--brand-warm-black, #15120E);
+margin: 0px;
+font-family: "Hanken Grotesk";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 41.6px */
+letter-spacing: -0.32px;
+}
+.ap-bb-btn{
+    display: flex;
+    padding: 0px;
+padding-bottom: 10px;
+align-items: center;
+gap: 16px;
+border-bottom: 1px solid var(--brand-warm-black-50, rgba(21, 18, 14, 0.50));
+color: var(--brand-warm-black, #15120E);
+font-family: "Hanken Grotesk";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+border-radius: 0px;
+line-height: 140%; /* 25.2px */
+}
+.ap-b-btn{
+    display: flex;
+padding: 17px 30px;
+align-items: center;
+gap: 16px;
+border-radius: 0px !important;
+border: 1px solid var(--brand-warm-black, #15120E);
+background: var(--brand-warm-black, #15120E);
+color: var(--brand-sand, #E0CCBB);
+font-family: "Hanken Grotesk";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 25.2px */
+}
+
+
+@media (max-width: 899px) {
+    .ab-s3{
+        padding: 40px 24px;
+        gap: 48px;
+    }
+    .ab-s3-item{
+            gap: 32px;
+    }
+    .ab-s3-item .value{
+        gap: 24px;
+    }
+    .s3-item-no{
+        font-size: 16px;
+    }
+    .s3-item-title{
+        font-size: 24px;
+    }
+    .ab-s3-item .value .media img,.ab-s3-item .value .media{
+        height: 400px;
+        top: 0px;
+    }
+    .ab-select-p{
+        font-size: 24px;
+    }
+    .last-cta{
+        padding-top: 40px;
+        gap: 24px;
+    }
+    .intro-row{
+        width: 327px;
+    align-self: center;
+    }
+    .intro-row,.row-tsxt{
+        gap: 32px;
+    }
+    .ab-s3-h1,.ab-s2-h1{
+        font-size: 32px;
+    }
+    .ab-sec2 {
+        padding: 40px 24px;
+        gap: 32px;
+    }
+    .who .block{
+        margin: 0px;
+        margin-top: 32px;
+        padding: 40px 24px;
+    gap: 32px;
+    }
+    .who .media{
+margin: 0px;
+    height: 280px;
+    }
+    .ab-s2-items{
+        display: flex;
+        flex-direction: column;
+        grid-area: 0px;
+    }
+    .ahero .hero-in{
+        gap: 32px;
+        left: 24px;
+        right: 24px;
+        bottom: 40px;
+    }
+    .ab-h1{
+        font-size: 72px;
+    }
+        .ahero .title{
+            gap: 24px;
+        }
+        .act-buttons{
+            margin-bottom: 0px;
+            gap: 24px;
+        }
+}
