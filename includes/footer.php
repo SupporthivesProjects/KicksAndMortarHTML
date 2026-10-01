@@ -10,12 +10,12 @@
       <p class="ar" dir="auto" data-fade>لنتحدث</p>
     </div>
     <div class="fcols" data-fade>
-      <div>
+      <div class="ooter-company-contact">
         <span>Contact</span>
         <a href="mailto:hello@klicksandmortar.com" class="ulink">hello@klicksandmortar.com</a>
         <p>Dubai, United Arab Emirates</p>
       </div>
-      <div>
+      <div class="footer-service">
         <span>Services</span>
         <a href="seo.html" class="ulink">SEO</a>
         <a href="ppc.html" class="ulink">PPC</a>
@@ -24,14 +24,14 @@
         <a href="web-design.html" class="ulink">Web Design</a>
         <a href="reputation.html" class="ulink">Reputation</a>
       </div>
-      <div>
+      <div class="ooter-company">
         <span>Company</span>
         <a href="about.html" class="ulink">About</a>
         <a href="process.html" class="ulink">Process</a>
         <a href="faq.html" class="ulink">FAQ</a>
         <a href="contact.html" class="ulink">Contact</a>
       </div>
-      <div>
+      <div class="ooter-company-action">
         <span>Account</span>
         <a href="login.html" class="ulink">Log in</a>
         <a href="signup.html" class="ulink">Sign up</a>
