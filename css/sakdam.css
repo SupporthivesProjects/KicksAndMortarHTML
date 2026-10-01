@@ -290,6 +290,10 @@
 .ser_nav {
     border-bottom: none !important;
 }
+.ser_captcha {
+    width: 304px;
+    height: 78px;
+}
 
 @media only screen and (max-width: 600px) {
     .ser_outer {
