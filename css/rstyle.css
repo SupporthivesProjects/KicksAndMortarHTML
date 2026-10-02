@@ -38,7 +38,9 @@
 #f-svc:has(option:checked:not([value=""])) {
     opacity: 1;
 }
-
+.process_qsec .actions .btn-s{
+    padding: 10px 0px 10px 0px;
+}
 
 /* *************** */
 /* Responsive Css */
