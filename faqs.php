@@ -62,16 +62,16 @@
       <div class="qrows">
         <div class="qrow hair" data-acc data-step>
           <button type="button " class="faqacc_btn" aria-expanded="false" aria-controls="qa05"><span class="xs">/ 05</span><span class="h5 q">Which currencies can I pay in?</span><span class="ico" aria-hidden="true"><i></i><i></i></span></button>
-          <div class="acc-panel" id="qa05" role="region" aria-hidden="true"><div><p>US dollars, euros and pounds sterling. Switch currency from the top of any page and every price updates.</p></div></div>
+          <div class="faqacc_panel acc-panel" id="qa05" role="region" aria-hidden="true"><div><p>US dollars, euros and pounds sterling. Switch currency from the top of any page and every price updates.</p></div></div>
         </div><div class="qrow hair" data-acc data-step>
           <button type="button " class="faqacc_btn" aria-expanded="false" aria-controls="qa06"><span class="xs">/ 06</span><span class="h5 q">How do I pay?</span><span class="ico" aria-hidden="true"><i></i><i></i></span></button>
-          <div class="acc-panel" id="qa06" role="region" aria-hidden="true"><div><p>At checkout you continue to our payment provider’s secure page and pay by Visa or Mastercard. We never see or store your card details.</p></div></div>
+          <div class="faqacc_panel acc-panel" id="qa06" role="region" aria-hidden="true"><div><p>At checkout you continue to our payment provider’s secure page and pay by Visa or Mastercard. We never see or store your card details.</p></div></div>
         </div><div class="qrow hair" data-acc data-step>
           <button type="button " class="faqacc_btn" aria-expanded="false" aria-controls="qa07"><span class="xs">/ 07</span><span class="h5 q">Can I use a discount code?</span><span class="ico" aria-hidden="true"><i></i><i></i></span></button>
-          <div class="acc-panel" id="qa07" role="region" aria-hidden="true"><div><p>Yes. Enter it at checkout and the total updates before you continue to payment.</p></div></div>
+          <div class="faqacc_panel acc-panel" id="qa07" role="region" aria-hidden="true"><div><p>Yes. Enter it at checkout and the total updates before you continue to payment.</p></div></div>
         </div><div class="qrow hair" data-acc data-step>
           <button type="button " class="faqacc_btn" aria-expanded="false" aria-controls="qa08"><span class="xs">/ 08</span><span class="h5 q">Do I get an invoice?</span><span class="ico" aria-hidden="true"><i></i><i></i></span></button>
-          <div class="acc-panel" id="qa08" role="region" aria-hidden="true"><div><p>Yes. Every order has an invoice you can download from your account.</p></div></div>
+          <div class="faqacc_panel acc-panel" id="qa08" role="region" aria-hidden="true"><div><p>Yes. Every order has an invoice you can download from your account.</p></div></div>
         </div>
       </div>
     </div>
@@ -80,13 +80,13 @@
       <div class="qrows">
         <div class="qrow hair" data-acc data-step>
           <button type="button " class="faqacc_btn" aria-expanded="false" aria-controls="qa09"><span class="xs">/ 09</span><span class="h5 q">Where do I find my reports?</span><span class="ico" aria-hidden="true"><i></i><i></i></span></button>
-          <div class="acc-panel" id="qa09" role="region" aria-hidden="true"><div><p>In your account. Every report we deliver is listed with the service it belongs to, ready to download.</p></div></div>
+          <div class="faqacc_panel acc-panel" id="qa09" role="region" aria-hidden="true"><div><p>In your account. Every report we deliver is listed with the service it belongs to, ready to download.</p></div></div>
         </div><div class="qrow hair" data-acc data-step>
           <button type="button " class="faqacc_btn" aria-expanded="false" aria-controls="qa10"><span class="xs">/ 10</span><span class="h5 q">Can I see my past orders?</span><span class="ico" aria-hidden="true"><i></i><i></i></span></button>
-          <div class="acc-panel" id="qa10" role="region" aria-hidden="true"><div><p>Yes. Your account lists every order with its services, tiers, terms and invoice.</p></div></div>
+          <div class="faqacc_panel acc-panel" id="qa10" role="region" aria-hidden="true"><div><p>Yes. Your account lists every order with its services, tiers, terms and invoice.</p></div></div>
         </div><div class="qrow hair" data-acc data-step>
           <button type="button " class="faqacc_btn" aria-expanded="false" aria-controls="qa11"><span class="xs">/ 11</span><span class="h5 q">What if I need something the packages do not cover?</span><span class="ico" aria-hidden="true"><i></i><i></i></span></button>
-          <div class="acc-panel" id="qa11" role="region" aria-hidden="true"><div><p>Each service page has a custom package option. Send us your brief and we come back with a price.</p></div></div>
+          <div class="faqacc_panel acc-panel" id="qa11" role="region" aria-hidden="true"><div><p>Each service page has a custom package option. Send us your brief and we come back with a price.</p></div></div>
         </div>
       </div>
     </div>
