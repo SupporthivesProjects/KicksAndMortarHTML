@@ -445,6 +445,13 @@
         height: 100%;
     }
 
+    .cart-item__duration button {
+        height: 100%;
+        width: 100%;
+        max-width: 46%;
+        justify-content: center;
+    }
+
 
 }
 
