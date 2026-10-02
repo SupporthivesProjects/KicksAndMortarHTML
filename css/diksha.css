@@ -327,7 +327,6 @@ text-underline-position: from-font;
 }
 
 .field-row{
-flex-direction: column;
 align-items: flex-start;
 gap: 24px;
 align-self: stretch;
