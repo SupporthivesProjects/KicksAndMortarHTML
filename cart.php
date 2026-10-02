@@ -347,7 +347,7 @@
 
                     <div class="service-card__image">
                         <img
-                            src="./img/cart-social-media.webp"
+                            src="./img/cart-email-marketing.webp"
                             alt="Email marketing"
                         >
                     </div>
@@ -364,7 +364,7 @@
 
                     <div class="service-card__image">
                         <img
-                            src="./img/cart-social-media.webp"
+                            src="./img/cart-web-design.webp"
                             alt="Web design"
                         >
                     </div>
@@ -381,7 +381,7 @@
 
                     <div class="service-card__image">
                         <img
-                            src="./img/cart-social-media.webp"
+                            src="./img/cart-reputation.webp"
                             alt="Reputation"
                         >
                     </div>
