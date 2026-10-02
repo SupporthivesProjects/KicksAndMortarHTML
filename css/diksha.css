@@ -873,7 +873,7 @@ line-height: 140%; /* 22.4px */
 .captcha-slot-1 .recaptcha{
 color: var(--brand-sand, #E0CCBB);
 
-/* body / xsmall */
+/* body  xsmall */
 font-family: "Hanken Grotesk";
 font-size: 14px;
 font-style: normal;
@@ -889,7 +889,7 @@ font-family: "Hanken Grotesk";
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
-line-height: 140%; /* 19.6px */ */
+line-height: 140%; /* 19.6px */ 
 }
 
 .an-div .btn-1 .arrow-1{
