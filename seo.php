@@ -21,8 +21,8 @@
       <p class="body mute ser_p2" data-lines data-hero>Get found on Google by the people already searching for what you
         sell.
         Three tiers, each on a fixed term, with the price on the page.</p>
-      <div class="actions"><a href="#packages" class="btn btn-p" data-go="packages"><span>See packages</span><img
-            class="arrow" src="./img/arrow.svg" alt=""></a><a href="#custom-package" class="btn btn-s"
+      <div class="actions ser_act"><a href="#packages" class="btn btn-p" data-go="packages"><span>See packages</span><img
+            class="arrow" src="./img/arrow.svg" alt=""></a><a href="#custom-package" class="btn btn-s ser_btn_"
           data-go="custom-package"><span>Send a brief</span><img class="arrow" src="./img/arrow.svg" alt=""></a>
       </div>
     </div>

@@ -267,7 +267,6 @@ margin: 0px;
 .btn-1{
     display: flex;
 width: auto;
-justify-content: space-between;
 padding: 17px 30px;
 align-items: center;
 gap: 16px;
@@ -275,7 +274,7 @@ align-self: stretch;
 border: 1px solid var(--brand-sand, #E0CCBB);
 background: var(--brand-sand, #E0CCBB);
 color: var(--brand-warm-black, #15120E);
-
+margin: 0px;
 /* button / regular */
 font-family: "Hanken Grotesk";
 font-size: 18px;
@@ -467,7 +466,6 @@ line-height: 140%; /* 19.6px */
     width: 16px;
 height: 16px;
 }
-
 
 @media only screen and (max-device-width: 600px){
 
@@ -763,7 +761,6 @@ line-height: 160%; /* 28.8px */
     /*signup page*/
     .field-row-in{
         display: flex;
-flex-direction: column;
 align-items: flex-start;
 gap: 12px;
 align-self: stretch;
@@ -894,20 +891,15 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%; /* 19.6px */ */
 }
-}}
+
+.an-div .btn-1 .arrow-1{
+    width: 16px;
+height: 16px;
+}
+}
 
 @media screen and (width < 1920px) {
     .auth-panel-1{
         padding: 80px;
     }
-}
-
-.an-div .btn-1{
-    justify-content: flex-start;
-}
-
-.an-div .btn-1 .arrow-1{
-    width: 16px;
-    height: 16px;
-    filter: brightness(0);
 }

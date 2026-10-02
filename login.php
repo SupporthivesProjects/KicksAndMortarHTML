@@ -25,18 +25,18 @@
               <h1 class="b-login" data-lines data-hero>Log in</h1>
           </div>
           <form class="form-1 auth-form" data-auth="login">
-            <div class="field-wrap"><label for="f-email">Email address</label>
-            <div class="ctl"><input name="email" id="f-email" required autocomplete="email" type="email" placeholder="john.smith@email.com"></div>
+            <div class="fieldwrap"><label for="f-email">Email address</label>
+            <div class="tcl"><input name="email" id="f-email" required autocomplete="email" type="email" placeholder="john.smith@email.com"></div>
           </div>
           <div class="fieldwrap"><label for="f-password">Password</label>
-          <div class="tcl"><input name="password" id="f-password" required autocomplete="current-password" type="password" placeholder="" minlength="8"></div>
+          <div class="tcl"><input name="password" id="f-password" required autocomplete="current-password" type="password" placeholder="••••••••••••" minlength="8"></div>
         </div><a class="login-f text-link forgot" href="forgot-password.html">Forgot password?</a>
         
       </form>
       <div class="an-div">
         
         <button type="submit" class="btn-1 btn-p">
-          <span>Log in</span><img class="arrow-1" src="img/arrow.svg" alt="">
+          <span>Log in</span><span class="arrowstyle">&rarr;</span>
         </button>
         <p class="login-no faint">New here? <a href="signup.php">Create an account</a></p>
       </div>

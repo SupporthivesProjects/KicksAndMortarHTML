@@ -9,7 +9,7 @@
       <a href="mailto:hello@klicksandmortar.com" class="big ulink" data-lines>Let's talk.</a>
       <p class="ar" dir="auto" data-fade>لنتحدث</p>
     </div>
-    <div class="fcols" data-fade>
+    <div class="fcols fcols-menu" data-fade>
       <div class="ooter-company-contact">
         <span>Contact</span>
         <a href="mailto:hello@klicksandmortar.com" class="ulink">hello@klicksandmortar.com</a>
