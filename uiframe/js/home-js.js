@@ -60,3 +60,24 @@
         }, false);
       });
     }
+
+
+    // remove animation in mobile
+    const elements = document.querySelectorAll(".footer-content");
+
+    const desktop = window.matchMedia("(min-width: 768px)");
+
+    function setupParallax() {
+      elements.forEach((element) => {
+        if (desktop.matches) {
+          element.dataset.speed = "0.4";
+          element.dataset.pos = "end";
+        } else {
+          delete element.dataset.speed;
+          delete element.dataset.pos;
+        }
+      });
+    }
+
+    // Call it
+    setupParallax();
