@@ -17,9 +17,9 @@
                 <p class="body mute ser_p2" data-lines data-hero>Ads on Google and Meta that reach people ready to buy.
                     Three tiers,
                     each on a fixed term, with the ad spend included in the price.</p>
-                <div class="actions"><a href="#packages" class="btn btn-p" data-go="packages"><span>See
+                <div class="actions ser_act"><a href="#packages" class="btn btn-p" data-go="packages"><span>See
                             packages</span><img class="arrow" src="assets/arrow.svg" alt=""></a><a
-                        href="#custom-package" class="btn btn-s" data-go="custom-package"><span>Send a brief</span><img
+                        href="#custom-package" class="btn btn-s ser_btn_" data-go="custom-package"><span>Send a brief</span><img
                             class="arrow" src="assets/arrow.svg" alt=""></a>
                 </div>
             </div>
