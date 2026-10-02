@@ -13,6 +13,121 @@
    
 }
 @media only screen and (max-width: 600px) {
+    .logo{
+        color: var(--brand-sand, #E0CCBB);
+        font-family: "Hanken Grotesk";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: -0.84px;
+    }
+    .nav-actions .ulink {
+        color: var(--brand-sand, #E0CCBB);
+        font-family: "Hanken Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    .menu-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+        width: fit-content;
+        flex-direction: column;
+    }
+
+    .menu-links a .line, .menu-links a .line.active{
+        font-family: "Hanken Grotesk";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%; /* 57.6px */
+        letter-spacing: -0.96px;
+     }
+     .menu-content .label p {
+        color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+        font-family: "Hanken Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 4px;
+    }
+    .menu-content .label p{
+        font-family: "Noto Sans Arabic";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 25.6px */
+    }
+    .menu-content .ar{
+        color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+        font-family: "Noto Sans Arabic";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 25.6px */
+    }
+
+    .nav.menu-open .menu-btn .bars i:last-child {
+        translate: 4px -5px;
+    }
+    .nav.menu-open .menu-btn .bars i:first-child {
+        translate: 4px 5px;
+    }
+
+    .nav.menu-open .menu-btn:hover .bars i {
+        transform: none;
+    }
+    .nav.menu-open .menu-btn .bars i:last-child {
+        translate: calc(var(--u) * 6) calc(var(--u) * -5);
+        rotate: -45deg;
+        scale: 0.707 1;
+    }
+    .nav.menu-open .menu-btn .bars i:first-child {
+        translate: calc(var(--u) * 6) calc(var(--u) * 5);
+        rotate: 40deg;
+        scale: 0.707 1;
+    }
+    .mobile-currency .btn{
+        color: var(--brand-sand, #E0CCBB);
+        font-family: "Hanken Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        background: transparent;
+        border: 0px;
+        padding: 0px;
+    }
+    .dropdown-menu.show {
+        display: block;
+        background: #000;
+        min-width: auto;
+    }
+    .dropdown-menu .dropdown-item{
+        color: #e0ccbb;
+    }
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+        border: 0px;
+        background: url(../img/chevron-down.svg) no-repeat;
+        width: 12px;
+        height: 12px;
+    }
+
+
+}
+@media only screen and (max-width: 600px) {
    .legal-clauses {
         width: 1100px;
         max-width: 100%;
@@ -47,6 +162,34 @@
         line-height: 120%;
         letter-spacing: -1.92px;
     }
+    .tc-top-content h1 span {
+        color: var(--brand-sand, #E0CCBB);
+        font-family: "Hanken Grotesk";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%;
+        letter-spacing: -1.8px;
+    }
+    .legal-clauses h2 {
+        color: var(--brand-warm-black, #15120E);
+        font-family: "Hanken Grotesk";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: -0.32px;
+        margin: 20px 0px;
+    }
+    .legal-clauses .small {
+        color: var(--brand-warm-black-50, rgba(21, 18, 14, 0.50));
+        font-family: "Hanken Grotesk";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 0px;
+    }
     .col-lg1 .label-p p {
         color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
         font-family: "Noto Sans Arabic";
@@ -61,7 +204,51 @@
 
 }
 @media only screen and (max-width: 600px) {
+    .not-found-copy {
+        position: relative;
+        padding-top: 48px;
+        margin-left: var(--pad);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        height: 560px;
+    }
+    .not-found-copy-content p {
+        color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+        font-family: "Hanken Grotesk";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        width: 640px;
+        margin-bottom: 0px;
+        max-width: 100%;
+    }
 
+    .not-found-copy-content .actions .btn-p{
+        display: flex;
+        padding: 17px 30px;
+        align-items: center;
+        gap: 16px;
+        height: 61px;
+        width: 205px;
+        max-width: 100%;
+        color: var(--brand-warm-black, #15120E);
+        font-family: "Hanken Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    .fcols {
+        display: flex;
+        gap: 32px 24px;
+        flex-wrap: wrap;
+    }
+    .ooter-company-action{
+        width: 100%;
+    }
     .footer-content {
         position: relative;
         left: 0;
@@ -70,4 +257,40 @@
         padding: 80px 24px 40px;
         gap: 56px;
     }
+    .talk .big {
+        color: var(--brand-sand, #E0CCBB);
+        font-family: "Hanken Grotesk";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%;
+        letter-spacing: -6px;
+    }
+    .fbottom {
+        position: relative;
+        display: flex;
+        align-items: self-start;
+        justify-content: space-between;
+        padding-top:32px;
+    }
+    .legal {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px 24px;
+    }
+    .legal p,   .legal a{
+        color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+        font-family: "Hanken Grotesk";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 19.6px */
+    }
+    .fcols div {
+        gap: 10px;
+    }
+    .fcols-menu div{
+        gap: 10px;
+    }
+    
 }

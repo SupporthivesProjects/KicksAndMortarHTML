@@ -32,9 +32,84 @@
     line-height: 120%;
 }
 
+.menu-links .line{
+    color: var(--brand-sand, #E0CCBB);
+    font-family: "Hanken Grotesk";
+    font-size: 104px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: -2.08px;
+}
+.menu-links a .line{
+    color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+    font-family: "Hanken Grotesk";
+    font-size: 104px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 124.8px */
+    letter-spacing: -2.08px;
+}
+.menu-links a .line.active{
+    color: var(--brand-sand, #E0CCBB);
+    font-family: "Hanken Grotesk";
+    font-size: 104px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: -2.08px;
 
-
-
+}
+.menu-foot .ulink{
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.menu-content .label p{
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 4px;
+}
+.menu-content .label .ar{
+    color: var(--sand-50);
+    color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+    font-family: "Noto Sans Arabic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    margin-bottom: 0px;
+}
+.nav .logo{
+    color: var(--brand-sand, #E0CCBB);
+    font-family: "Hanken Grotesk";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.84px;
+}
+.menu-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 56px;
+    width: calc(var(--u) * 1200);
+}
+.menu-links sup {
+    color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
 /* --------------------tc------------------------ */
 .col-lg1 .label-p  p{
     color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
@@ -66,8 +141,7 @@
     gap: 4px;
 }
 
-.tc-top-content h1{
-    transition-delay: 0s;
+.tc-top-content h1 span{
     color: var(--brand-sand, #E0CCBB);
     font-family: "Hanken Grotesk";
     font-size: 96px;
@@ -76,21 +150,32 @@
     line-height: 120%;
     letter-spacing: -1.92px;
 }
+.tc-top-content h1{
+    margin-bottom: 0px;
+}
+.tc-top-content .line{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
 .tc-top-content p{
+    width: 560px;
+    max-width: 100%;
+    margin-bottom: 0px;
+}
+.tc-top-content p span{
     color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
     font-family: "Hanken Grotesk";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%; /* 32px */
-    width: 560px;
-    max-width: 100%;
 }
 .legal-clauses{
     width: 1100px;
     max-width: 100%;
-    margin: px auto;
+    margin: 0px auto;
     margin: auto;
+    gap: 0px;
     padding: 0px 120px;
 }
 .terms-main{
@@ -130,5 +215,141 @@
     margin-bottom: 72px;
 }
 .legal-clauses .is-inview:last-child p{
+    margin-bottom: 0px;
+}
+/* ----------------------error----------------------- */
+.not-found-copy {
+    position: relative;
+    padding-top: 306px;
+    margin-left: var(--pad);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.not-found-copy .label p{
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 4px;
+}
+
+.not-found-copy-content .label .ar{
+    color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+    font-family: "Noto Sans Arabic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    margin-bottom: 0px;
+}
+.not-found-copy-content h1{
+    color: var(--brand-sand, #E0CCBB);
+    font-family: "Hanken Grotesk";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 115.2px */
+    letter-spacing: -1.92px;
+    margin-bottom: 0px;
+}
+.not-found-copy-content h1 span{
+    padding-bottom: 0px;
+}
+.not-found-copy-content {
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.not-found-copy .label p {
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 4px;
+    width: fit-content;
+}
+.talk .big {
+    color: var(--brand-sand, #E0CCBB);
+    font-family: "Hanken Grotesk";
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 240px */
+    letter-spacing: -6px;
+}
+.talk .ar{
+    color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+    font-family: "Noto Sans Arabic";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    margin-bottom: 0px;
+}
+.not-found-copy-content .p{
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+}
+.not-found-copy-content p{
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    width: 640px;
+    margin-bottom: 0px;
+}
+.fcols div > span {
+    color: var(--sand-50);
+    color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.legal .ulink {
+    color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+    font-family: "Hanken Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.footer-content .fcols .ulink {
+    position: relative;
+    display: inline-block;
+    color: var(--brand-sand, #E0CCBB);
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.fcols {
+    display: flex;
+    gap: 80px
+}
+.legal {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+.legal p{
     margin-bottom: 0px;
 }

@@ -1,0 +1,1202 @@
+.purchase {
+    padding: 240px 120px 160px;
+}
+
+.purchase-heading {
+    flex-wrap: nowrap;
+    gap: 72px;
+}
+
+.on-light .label p:first-child {
+    color: var(--brand-warm-black-70, rgba(21, 18, 14, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+    margin-bottom: 4px;
+}
+
+.on-light .label .ar {
+    color: var(--brand-warm-black-50, rgba(21, 18, 14, 0.50));
+    font-family: "Noto Sans Arabic";
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.purchase-heading>.label {
+    align-self: flex-start;
+}
+
+.checkout-topline a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.checkout-fields {
+    width: calc(var(--u) * 776);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.checkout-fields>h2 {
+    margin: 32px 0px 0px;
+    color: var(--brand-warm-black, #15120E);
+
+}
+
+.ctl {
+    color: var(--brand-warm-black, #15120E);
+    font-family: "Hanken Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+}
+
+.ctl input,
+.ctl textarea,
+.ctl select {
+    color: var(--brand-warm-black, #15120E);
+
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+/* Placeholder */
+.ctl input::placeholder,
+.ctl textarea::placeholder {
+    color: var(--brand-warm-black, #15120E);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 1;
+}
+
+/* Select placeholder */
+.ctl select:invalid {
+    color: var(--brand-warm-black, #15120E);
+}
+
+.ctl {
+    position: relative;
+}
+
+.ctl select {
+    width: 100%;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: transparent;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='5' viewBox='0 0 9 5' fill='none'%3E%3Cpath d='M0.75 0.75L4.25 4.25L7.75 0.75' stroke='%2315120E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 9px 5px;
+
+    padding-right: 45px;
+}
+
+.order-summary {
+    display: flex;
+    width: 600px;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    background: var(--base-white, #FFF);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.order-summary__title {
+    margin: 0;
+
+    color: var(--brand-warm-black, #15120E);
+
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.28px;
+}
+
+
+/* =========================================
+   ORDER ITEMS
+========================================= */
+
+.order-summary__items {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.order-summary__item {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+
+    align-items: flex-start;
+    gap: 24px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid var(--brand-warm-black-line-15,
+            rgba(21, 18, 14, 0.15));
+}
+
+
+.order-summary__item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+
+    flex: 1 0 0;
+    min-width: 0;
+}
+
+
+.order-summary__item-name {
+    color: var(--brand-warm-black, #15120E);
+
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+
+.order-summary__item-term {
+    color: var(--brand-warm-black-50,
+            rgba(21, 18, 14, 0.50));
+
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.order-summary__item-price {
+    flex-shrink: 0;
+
+    color: var(--brand-warm-black, #15120E);
+
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   DISCOUNT CODE
+========================================= */
+
+.order-summary__discount {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    gap: 16px;
+
+    box-sizing: border-box;
+}
+
+
+.order-summary__discount-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    flex: 1 0 0;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid rgba(21, 18, 14, 0.15);
+}
+
+
+.order-summary__label {
+    color: var(--brand-warm-black-70, rgba(21, 18, 14, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+
+.order-summary__code {
+    color: var(--brand-warm-black, #15120E);
+    font-family: "Hanken Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+}
+
+
+.order-summary__applied {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    padding: 14px 24px;
+
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    flex-shrink: 0;
+
+    border: 1px solid var(--base-success-green, #47B147);
+    background: #FFF;
+
+    color: var(--base-success-green, #47B147);
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+
+    cursor: pointer;
+}
+
+
+.order-summary__applied span {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   SUBTOTAL / DISCOUNT
+========================================= */
+
+.order-summary__totals {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.order-summary__total-row {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    justify-content: space-between;
+    color: var(--brand-warm-black, #15120E);
+    font-family: "Hanken Grotesk";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+}
+
+
+/* =========================================
+   TOTAL TODAY
+========================================= */
+
+.order-summary__today {
+    display: flex;
+    width: 100%;
+
+    padding: 24px 0 0;
+
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 1px solid var(--brand-warm-black-line-15, rgba(21, 18, 14, 0.15));
+
+    box-sizing: border-box;
+}
+
+
+.order-summary__today-label {
+    color: var(--brand-warm-black, #15120E);
+
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+
+.order-summary__today-price {
+    color: var(--brand-warm-black, #15120E);
+
+    /* heading / h4 */
+    font-family: "Hanken Grotesk";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 41.6px */
+    letter-spacing: -0.32px;
+}
+
+
+/* =========================================
+   TERMS
+========================================= */
+
+.order-summary__terms {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    gap: 16px;
+
+    margin: 0;
+
+    color: var(--brand-warm-black-70, rgba(21, 18, 14, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+    cursor: pointer;
+}
+
+
+.order-summary__terms input {
+    width: 16px;
+    height: 16px;
+
+    margin: 0;
+
+    flex-shrink: 0;
+
+    accent-color: #15120E;
+}
+
+
+.order-summary__terms a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+
+
+
+/* =========================================
+   SECURE PAYMENT
+========================================= */
+
+.order-summary__secure {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+
+    box-sizing: border-box;
+
+    background: #F5F0E8;
+}
+
+
+.order-summary__secure-header {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.order-summary__secure-header>span {
+    color: var(--brand-warm-black, #15120E);
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+
+.order-summary__cards {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+
+
+.order-summary__secure p {
+    margin: 0;
+    color: var(--brand-warm-black-70, rgba(21, 18, 14, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+
+/* =========================================
+   PAYMENT BUTTON
+========================================= */
+
+.order-summary__button {
+    display: flex;
+    padding: 17px 30px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border: 1px solid var(--brand-warm-black, #15120E);
+    background: var(--brand-warm-black, #15120E);
+    color: var(--brand-sand, #E0CCBB);
+    font-family: "Hanken Grotesk";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 25.2px */
+
+    cursor: pointer;
+}
+
+
+.order-summary__button-arrow {
+    font-size: 18px;
+    line-height: 1;
+}
+
+
+.order-summary__button:hover {
+    background: #25211D;
+}
+
+.payment_text {
+    max-width: 560px;
+}
+
+.button_black {
+    border-radius: 0px;
+}
+
+.order-summary__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 100%;
+}
+
+.timee {
+    color: var(--brand-warm-black-50, rgba(21, 18, 14, 0.50));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.order-summary__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.order-summary__title {
+    font-size: 20px;
+}
+
+/* =========================================
+   CART PAGE
+========================================= */
+
+.cart-page {
+    width: 100%;
+    padding: 240px 120px 160px 120px;
+    background: var(--brand-paper, #F4EFE7);
+}
+
+.cart-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.cart-page__header {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    margin-bottom: 72px;
+}
+
+.left_side {
+    display: flex;
+    width: 160px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.cart-page__breadcrumb.active {
+    color: var(--brand-warm-black-70, rgba(21, 18, 14, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.cart-page__breadcrumb {
+    color: var(--brand-warm-black-50, rgba(21, 18, 14, 0.50));
+
+    /* body / arabic */
+    font-family: "Noto Sans Arabic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    /* 25.6px */
+}
+
+.cart-page__title {
+    margin: 0;
+    color: var(--brand-warm-black, #15120E);
+    font-family: "Hanken Grotesk";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    /* 115.2px */
+    letter-spacing: -1.92px;
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+}
+
+.cart-page__count {
+    color: var(--brand-warm-black-50, rgba(21, 18, 14, 0.50));
+    font-family: "Hanken Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+}
+
+
+/* =========================================
+   MAIN CART
+========================================= */
+
+.cart-page__main {
+    display: flex;
+    padding-left: 232px;
+    align-items: flex-start;
+    gap: 72px;
+    align-self: stretch;
+}
+
+
+/* =========================================
+   CART ITEMS
+========================================= */
+
+.cart-page__items {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* =========================================
+   CART ITEM
+========================================= */
+
+.cart-item {
+    display: flex;
+    padding: 32px;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+
+    box-sizing: border-box;
+
+    background: #FFF;
+}
+
+
+.cart-item__image {
+    width: 180px;
+    height: 260px;
+
+    flex: 0 0 180px;
+
+    overflow: hidden;
+}
+
+
+.cart-item__image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   ITEM CONTENT
+========================================= */
+
+.cart-item__content {
+    display: flex;
+    min-width: 0;
+    flex: 1 1 auto;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+}
+
+
+/* =========================================
+   ITEM TOP
+========================================= */
+
+.cart-item__top {
+    display: flex;
+    width: 100%;
+
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+
+.cart-item__top>div:first-child {
+    display: flex;
+    min-width: 0;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+
+.cart-item__title {
+    margin: 0;
+    color: var(--brand-warm-black, #15120E);
+    font-family: "Hanken Grotesk";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 41.6px */
+    letter-spacing: -0.32px;
+}
+
+
+.cart-item__price {
+    flex-shrink: 0;
+    color: var(--brand-warm-black, #15120E);
+    font-family: "Hanken Grotesk";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 41.6px */
+    letter-spacing: -0.32px;
+
+    white-space: nowrap;
+}
+
+
+.cart-item__remove {
+    padding: 0;
+    color: var(--brand-warm-black-70, rgba(21, 18, 14, 0.70));
+
+    /* button / small */
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    cursor: pointer;
+}
+
+.remove {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.duarrtion {
+    color: var(--brand-warm-black-50, rgba(21, 18, 14, 0.50));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+/* =========================================
+   ITEM DETAILS
+========================================= */
+
+.cart-item__details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+
+.cart-item__details span {
+    color: var(--brand-warm-black-70, rgba(21, 18, 14, 0.70));
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+
+/* =========================================
+   DURATION BUTTONS
+========================================= */
+
+.cart-item__duration {
+    display: flex;
+    align-items: stretch;
+    align-self: flex-start;
+}
+
+
+.cart-item__duration button {
+    height: 56px;
+
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    border: 1px solid var(--brand-warm-black-line-15, rgba(21, 18, 14, 0.15));
+    border-right: 0;
+
+    background: #FFF;
+color: var(--brand-warm-black-70, rgba(21, 18, 14, 0.70));
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+
+    cursor: pointer;
+}
+
+
+.cart-item__duration button:first-child {
+    border-radius: 0;
+}
+
+
+.cart-item__duration button:last-child {
+    border-right: 1px solid rgba(21, 18, 14, 0.15);
+}
+
+
+.cart-item__duration button.active {
+    background: #15120E;
+    color: #FFF;
+}
+
+
+/* =========================================
+   ORDER SUMMARY
+========================================= */
+
+.cart-summary {
+display: flex;
+width: 520px;
+padding: 48px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;;
+    box-sizing: border-box;
+
+background: var(--brand-black, #0F0F0F);
+}
+
+
+.cart-summary__title {
+    margin: 0;
+color: var(--brand-sand, #E0CCBB);
+font-family: "Hanken Grotesk";
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 36.4px */
+letter-spacing: -0.28px;
+}
+
+
+.cart-summary__products {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.cart-summary__products span{
+    font-size: 16px;
+
+}
+
+
+.cart-summary__row {
+    display: flex;
+width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+ color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+font-family: "Hanken Grotesk";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 28.8px */
+}
+
+
+.cart-summary__subtotal {
+display: flex;
+padding-top: 24px;
+justify-content: space-between;
+align-items: flex-start;
+align-self: stretch;
+width: 100%;
+border-top: 1px solid var(--brand-sand-line-20, rgba(224, 204, 187, 0.20));
+}
+
+
+.cart-summary__checkout {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+
+.cart-summary__checkout>span {
+color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+
+
+.cart-summary__checkout strong {
+  color: var(--brand-sand, #E0CCBB);
+font-family: "Hanken Grotesk";
+font-size: 72px;
+font-style: normal;
+font-weight: 300;
+line-height: 120%; /* 86.4px */
+letter-spacing: -1.44px;
+}
+
+
+/* =========================================
+   CHECKOUT BUTTON
+========================================= */
+
+.cart-summary__button {
+ display: flex;
+padding: 17px 30px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+
+    align-items: center;
+    justify-content: space-between;
+border: 1px solid var(--brand-sand, #E0CCBB);
+background: var(--brand-sand, #E0CCBB);
+color: var(--brand-warm-black, #15120E);
+font-family: "Hanken Grotesk";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 25.2px */
+
+    cursor: pointer;
+}
+
+
+.cart-summary__button:hover {
+    background: #E3AC5A;
+}
+
+
+.cart-summary__button svg {
+    color: #15120E;
+}
+
+
+/* =========================================
+   PAYMENT
+========================================= */
+
+.cart-summary__payment {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    color: #F3EEE4;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+/* =========================================
+   SUMMARY NOTE
+========================================= */
+
+.cart-summary__note {
+    display: flex;
+
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 0px;
+}
+
+
+.cart-summary__note p {
+    margin: 0;
+color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+
+
+/* =========================================
+   ADD ANOTHER SERVICE
+========================================= */
+
+.cart-services {
+    margin-top: 72px;
+display: flex;
+padding: 0px  0px 0px 232px ;
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+align-self: stretch;
+}
+
+
+.cart-services__header {
+ display: flex;
+padding-top: 48px;
+justify-content: space-between;
+align-items: baseline;
+align-self: stretch;
+width: 100%;
+border-top: 1px solid var(--brand-warm-black-line-15, rgba(21, 18, 14, 0.15));
+}
+
+
+.cart-services__header h2 {
+    margin: 0;
+color: var(--brand-warm-black, #15120E);
+font-family: "Hanken Grotesk";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 41.6px */
+letter-spacing: -0.32px;
+}
+
+
+.cart-services__header a {
+    display: flex;
+
+    align-items: center;
+    gap: 16px;
+color: var(--brand-warm-black, #15120E);
+font-family: "Hanken Grotesk";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 25.2px */
+padding-bottom: 10px;
+
+    text-decoration: none;
+    text-underline-offset: none;
+    border-bottom: 1px solid var(--brand-warm-black-50, rgba(21, 18, 14, 0.50));
+}
+
+
+.cart-services__header a:hover {
+    color: #E3AC5A;
+}
+
+
+/* =========================================
+   SERVICE LIST
+========================================= */
+
+.cart-services__list {
+    display: flex;
+    width: 100%;
+
+    gap: 24px;
+}
+
+
+.service-card {
+    display: flex;
+    min-width: 0;
+    flex: 1 1 0;
+
+    flex-direction: column;
+gap: 16px;
+color: var(--brand-warm-black, #15120E);
+font-family: "Hanken Grotesk";
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 36.4px */
+letter-spacing: -0.28px;    text-decoration: none;
+}
+
+
+.service-card__image {
+    width: 100%;
+    height: 220px;
+
+    overflow: hidden;
+}
+
+
+.service-card__image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+
+.service-card:hover .service-card__image img {
+    transform: scale(1.03);
+}
+
+
+.service-card__bottom {
+    display: flex;
+
+    padding-top: 0px;
+
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+
+.service-card__bottom span {
+color: var(--brand-warm-black, #15120E);
+font-family: "Hanken Grotesk";
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 36.4px */
+letter-spacing: -0.28px;
+}
+
+
+.service-card__bottom small {
+color: var(--brand-warm-black-50, rgba(21, 18, 14, 0.50));
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+    white-space: nowrap;
+}
+
+.account-header {
+    background: url(../img/account-header-mobile.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

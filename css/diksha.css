@@ -15,9 +15,16 @@ line-height: 120%;
 letter-spacing: -1.92px;
 }*/
 
-.auth-panel{
-    gap:48px !important;
+.auth-panel-1{
+    display: flex;
+width: auto;
+height: auto;
+padding: 192px 240px 104px 160px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
 }
+
 .auth-art-copy{
 gap: 24px !important;
 }
@@ -67,12 +74,28 @@ gap: 24px;
 align-self: stretch;
 }
 
+.login-out{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 48px;
+align-self: stretch;
+}
+
 .login-inner{
     display: flex;
 flex-direction: column;
 align-items: flex-start;
 gap: 48px;
 align-self: stretch;
+}
+
+.login-in{
+    display: flex;
+width: auto;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
 }
 
 .login{
@@ -83,8 +106,8 @@ font-size: 16px;
 leading-trim: NONE;
 line-height: 140%;
 letter-spacing: 0%;
-width: 53;
-height: 22;
+width: auto;
+height: auto;
 angle: 0 deg;
 opacity: 1;
 display: flex;
@@ -116,8 +139,8 @@ font-size: 16px;
 leading-trim: NONE;
 line-height: 160%;
 letter-spacing: 0%;
-width: 93;
-height: 26;
+width: auto;
+height: auto;
 angle: 0 deg;
 opacity: 1;
 
@@ -141,8 +164,8 @@ span.line{
 }
 
 .form-l{
-    width: 560;
-height: 236;
+    width: auto;
+height: auto;
 angle: 0 deg;
 opacity: 1;
 gap: 24px !important;
@@ -171,7 +194,7 @@ line-height: 140%; /* 22.4px */
 
 .tcl input{
     display: block;
-    width: 100%;
+    width: auto;
     box-sizing: border-box;
     padding: 0;
     border: 0;
@@ -235,7 +258,7 @@ text-underline-position: from-font;
     display: flex;
 flex-direction: column;
 align-items: flex-start;
-gap: 24px;
+gap: 24px !important;
 align-self: stretch;
 margin: 0px;
 }
@@ -243,7 +266,7 @@ margin: 0px;
 .btn-l,
 .btn-1{
     display: flex;
-width: 100%;
+width: auto;
 justify-content: space-between;
 padding: 17px 30px;
 align-items: center;
@@ -285,28 +308,246 @@ margin: 0px;
 text-decoration: none;
 }
 
-a.creat,
-a.creat:hover,
-a.creat:focus,
-a.creat:visited {
+
+.login-no a{
     color: var(--brand-sand, #E0CCBB);
-    font-family: "Hanken Grotesk";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    text-decoration: underline !important;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
-    text-underline-position: from-font;
+
+/* body / small */
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+}
+
+.field-row{
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+}
+
+.field-row-in{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+flex: 1 0 0;
+}
+
+.field-row-in .f-name{
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+
+/* body / small */
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+
+.field-row-in input {
+    display: flex;
+padding-bottom: 16px;
+align-items: center;
+gap: 16px;
+align-self: stretch;
+border-bottom: 1px solid var(--brand-sand-line-20, rgba(224, 204, 187, 0.20));
+}
+
+.field-row-in .l-name{
+    color: var(--brand-sand, #E0CCBB);
+
+/* body / large */
+font-family: "Hanken Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 32px */
+}
+
+.consent-1{
+    display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.consent-1 .checkbox{
+    display: flex;
+width: auto;
+height: auto;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+border: 1px solid var(--brand-sand, #E0CCBB);
+background: var(--brand-sand, #E0CCBB);
+}
+
+.consent-1 .agree{
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+
+/* body / small */
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+
+}
+
+.consent-1 .agree a{
+    color: var(--brand-sand, #E0CCBB);
+
+/* body / small */
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+}
+.captcha-slot-1{
+    display: flex;
+width: auto;
+height: auto;
+padding: 0 16px;
+justify-content: space-between;
+align-items: center;
+border-radius: 4px;
+background: var(--brand-charcoal, #1B1A18);
+}
+
+.captcha-slot-1 .preview{
+    display: flex;
+align-items: center;
+gap: 12px;
+width: auto;
+height: auto;
+border-radius: 4px;
+border: 1px solid var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+background: var(--brand-black, #0F0F0F);
+color: var(--brand-sand, #E0CCBB);
+
+/* body / small */
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+
+.captcha-slot-1 .recaptcha{
+    color: var(--brand-sand, #E0CCBB);
+
+/* body / xsmall */
+font-family: "Hanken Grotesk";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+}
+
+.captcha-slot-1 .only{
+    color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+
+/* body / xsmall */
+font-family: "Hanken Grotesk";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
 }
 
 @media only screen and (max-device-width: 600px){
-    .login{
+
+    .auth-art-1{
+        position: relative;
         display: flex;
-width: 160px;
+        width: auto;
+        min-height: 420px;
+        height: 420px;
+        padding: 0;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
+    .auth-art-1 .media-1{
+        position: relative;
+        width: auto;
+        height: 100%;
+    }
+
+    .auth-art-1 .media-1 img{
+        display: block;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .auth-art-1 .media-1::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(18, 14, 11, 0.38) 0%, rgba(18, 14, 11, 0.65) 100%);
+        z-index: 1;
+    }
+
+    .auth-art-copy-1{
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        bottom: 32px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        max-width: 100%;
+    }
+
+    .auth-panel-1{
+        display: flex;
+        padding: 40px 24px !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: stretch;
+        margin: 0px;
+    }
+
+    .login-out{
+        display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+    }
+
+.login{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+}
+
+    .login-in{
+        display: flex;
+width: auto;
 flex-direction: column;
 align-items: flex-start;
 gap: 4px;
@@ -434,7 +675,7 @@ align-self: stretch;
 
     .an-div button{
         display: flex;
-width: 100%;
+width: auto;
 justify-content: space-between;
 padding: 17px 20px;
 align-items: center;
@@ -466,7 +707,7 @@ gap: 6px;
 white-space: nowrap;
 text-decoration: none;
     }
-    .creat{
+    .login-no a{
         color: var(--brand-sand, #E0CCBB);
 
 /* body / small */
@@ -517,5 +758,146 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 160%; /* 28.8px */
+    }
+
+    /*signup page*/
+    .field-row-in{
+        display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+align-self: stretch;
+    }
+
+    .field-row-in .f-name{
+        color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+
+/* body / small */
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+    }
+
+    .field-row-in .l-name{
+        color: var(--brand-sand, #E0CCBB);
+
+/* body / large */
+font-family: "Hanken Grotesk";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 32px */
+    }
+
+    .field-row-in input{
+        display: flex;
+padding-bottom: 16px;
+align-items: center;
+gap: 16px;
+align-self: stretch;
+border-bottom: 1px solid var(--brand-sand-line-20, rgba(224, 204, 187, 0.20));
+    }
+
+
+
+.consent-1{
+   display: flex;
+width: 327px;
+align-items: flex-start;
+gap: 16px;
+}
+
+.consent-1 .checkbox{
+   width: 16px;
+height: 16px;
+flex-shrink: 0;
+}
+
+.consent-1 .agree{
+    color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
+
+/* body / small */
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+
+}
+
+.consent-1 .agree a{
+    color: var(--brand-sand, #E0CCBB);
+
+/* body / small */
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+}
+.captcha-slot-1{
+   display: flex;
+width: 304px;
+height: 78px;
+padding: 0 16px;
+justify-content: space-between;
+align-items: center;
+border-radius: 4px;
+background: var(--brand-charcoal, #1B1A18);
+}
+
+.captcha-slot-1 .preview{
+    display: flex;
+align-items: center;
+gap: 12px;
+width: auto;
+height: auto;
+border-radius: 4px;
+border: 1px solid var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+background: var(--brand-black, #0F0F0F);
+color: var(--brand-sand, #E0CCBB);
+
+/* body / small */
+font-family: "Hanken Grotesk";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+
+.captcha-slot-1 .recaptcha{
+color: var(--brand-sand, #E0CCBB);
+
+/* body / xsmall */
+font-family: "Hanken Grotesk";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+}
+
+.captcha-slot-1 .only{
+    color: var(--brand-sand-50, rgba(224, 204, 187, 0.50));
+
+/* body / xsmall */
+font-family: "Hanken Grotesk";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */ */
+}
+}}
+
+@media screen and (width < 1920px) {
+    .auth-panel-1{
+        padding: 80px;
     }
 }

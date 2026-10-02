@@ -1,0 +1,227 @@
+.desktop_none{
+    display: none !important;
+}
+.mobile_none{
+    display: block !important;
+}
+/* Process Page */
+.process_qsec .actions .btn{
+    border-radius: 0px;
+}
+.process_hero .btn{
+    border-radius: 0px;
+}
+.qrow .ico i{
+    height: 1.5px !important;
+}
+.qrow.is-open .faqacc_panel{
+    padding-left: 7.7%;
+    padding-bottom: 32px;
+    padding-top: 1px;
+}
+.faq_s2 .qgroup .label{
+    width: fit-content;
+}
+.consent > input{
+    height: 20px !important;
+    width: 20px !important;
+}
+.contact_Write .split .form .field-wrap .ctl input::placeholder{
+    opacity: 0.5;
+}
+.contact_Write .split .form .field-wrap .ctl textarea::placeholder{
+    opacity: 0.5;
+}
+#f-svc {
+    opacity: 0.5;
+}
+#f-svc:has(option:checked:not([value=""])) {
+    opacity: 1;
+}
+
+
+/* *************** */
+/* Responsive Css */
+/* ************* */
+@media screen and (max-width: 700px) {
+  .desktop_none{
+      display: block !important;
+  }
+  .mobile_none{
+      display: none !important;
+  }
+  /* Process Page */
+  .process_hero {
+        min-height: 100vh;
+        position: relative;
+        padding: 273px 24px 40px 24px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .process_hero .hpar {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .process_hero .process_s1img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .process_hero .card-p {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 40px 24px;
+        gap: 32px;
+    }
+    .process_hero .card-p .card-in{
+        gap: 32px;
+    }
+    .process_hero .card-p .card-in p{
+        font-size: 20px;
+    }
+    .process_hero .card-p label{
+        font-size: 16px;
+    }.process_hero .card-p .btn{
+        font-size: 18px;
+    }
+    .process_hero .card-p h1{
+        font-size: 34px;
+    }
+    .process_stepsec{
+        padding: 0px 24px 40px 24px;
+    }
+    .process_stepsec .band{
+        gap: 32px
+    }
+    .process_stepsec .band .txt{
+        gap: 24px;
+        padding-top: 40px;
+        width: 100%;
+    }
+    .process_stepsec .band .txt .reg{
+        font-size: 18px;
+    }
+    .process_stepsec .band .txt .small{
+        font-size: 16px;
+    }
+    .process_stepsec .band .media{
+        margin: 0px;
+        height: 280px;
+    }
+    .process_stepsec .band .media img{
+        position: static;
+        height: 280px;
+        transform: translate3d(0px, 1px, 0px) scale(1) !important;
+    }
+    .process_qsec{
+        padding: 40px 24px;
+        gap: 32px;
+    }
+    .process_qsec .row{
+        gap: 32px;
+    }
+    .process_qsec .row .label{
+        font-size: 16px;
+    }
+    .process_qsec .row .h2{
+        font-size: 32px;
+    }
+    .process_qsec .irows .irow{
+        flex-direction: column;
+        gap: 32px;
+        padding: 40px 0px;
+    }
+    .process_qsec .irows .irow .reg{
+        padding: 0px;
+        font-size: 18px;
+    }
+    .process_qsec .irows .irow .xs{
+        font-size: 14px;
+    }
+    .process_qsec .irows .irow .h4{
+        font-size: 24px;
+    }
+    .process_qsec .actions{
+        gap: 24px;
+    }
+    .process_qsec .actions .btn{
+        border-radius: 0px;
+    }
+    .faq_s1{
+        padding: 140px 24px 40px;
+    }
+    .faq_s1 .row{
+        gap: 24px;
+    }
+    .faq_s1 .copy{
+        gap: 24px;
+    }
+    .faq_s1 .copy h1{
+        font-size: 40px;
+    }
+    .faq_s1 .copy p{
+        font-size: 20px;
+    }
+    .faq_s2{
+        padding: 40px 24px;
+        gap: 48px;
+    }
+    .qrow.is-open .faqacc_panel{
+        padding-left: 56px;
+        padding-bottom: 24px;
+    }
+    .faqacc_panel p{
+        font-size: 20px;
+    }
+    .faqacc_btn{
+        padding: 24px 0px !important;
+    }
+    .faq_still{
+        font-size: 24px;
+    }
+    .faq_btmrow{
+        gap: 32px !important;
+        padding-top: 40px !important;
+    }
+    .contact_Write{
+        padding: 40px 24px;
+    }
+    .contact_Write .split{
+        gap: 32px;
+    }
+    .contact_Write .dlist{
+        gap: 32px;
+    }
+    .cont_copy p{
+        font-size: 20px;
+    }
+    .contact_Write .split .form{
+        gap: 24px;
+        margin: 0px;
+    }
+    .contact_Write .split .form label{
+        font-size: 16px;
+    }
+    .contact_Write .h2{
+        font-size: 32px;
+    }
+    .contact_Write .dlist .small{
+        font-size: 16px;
+    }
+    .contact_Write .dlist .body{
+        font-size: 20px;
+    }
+    .submit_btn{
+        font-size: 18px;
+    }
+
+
+
+}

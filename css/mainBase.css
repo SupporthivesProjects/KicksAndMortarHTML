@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
 /* --------- External Library CSS --------- */
-
 @import url("./hamburgers.css");
 @import url("../uiframe/css/bootstrap.min.css");
 @import url("../uiframe/css/animate.min.css");
@@ -38,30 +35,7 @@
 
 
 /* ------------font family ---------- */
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('../fonts/Satoshi-Regular.otf') format('opentype');
-}
-@font-face {
-  font-family: 'Satoshi Black';
-  src: url('../fonts/Satoshi-Black.otf') format('opentype');
-}
-@font-face {
-  font-family: 'Satoshi Bold';
-  src: url('../fonts/Satoshi-Bold.otf') format('opentype');
-}
-@font-face {
-  font-family: 'Satoshi Light';
-  src: url('../fonts/Satoshi-Light.otf') format('opentype');
-}
-@font-face {
-  font-family: 'Satoshi Medium';
-  src: url('../fonts/Satoshi-Medium.otf') format('opentype');
-}
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Arabic:wght@100..900&display=swap');
 
 @media (min-width: 576px){
   .container, .container-sm {
@@ -137,7 +111,6 @@
   position: absolute;
 }
 section {
-  padding: 80px  0;
   position: relative;
   overflow: hidden;
   z-index: 1;
