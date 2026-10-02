@@ -109,34 +109,40 @@
                         <p class="xs faint">/ SEO</p>
                         <h3 class="h5">August SEO report</h3>
                         <p class="xs mute">Delivered 1 September 2026</p>
-                    </div><button type="button" data-download-sample="August SEO report">Download <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-  <path d="M8 1V15M2 9L8 15L14 9" stroke="#E0CCBB" stroke-width="1.5"/>
-</svg></button>
+                    </div><button type="button" data-download-sample="August SEO report">Download <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <path d="M8 1V15M2 9L8 15L14 9" stroke="#E0CCBB" stroke-width="1.5" />
+                        </svg></button>
                 </article>
                 <article class="file-row">
                     <div>
                         <p class="xs faint">/ SEO</p>
                         <h3 class="h5">Technical SEO audit</h3>
                         <p class="xs mute">Delivered 6 July 2026</p>
-                    </div><button type="button" data-download-sample="Technical SEO audit">Download  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-  <path d="M8 1V15M2 9L8 15L14 9" stroke="#E0CCBB" stroke-width="1.5"/>
-</svg></button>
+                    </div><button type="button" data-download-sample="Technical SEO audit">Download <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <path d="M8 1V15M2 9L8 15L14 9" stroke="#E0CCBB" stroke-width="1.5" />
+                        </svg></button>
                 </article>
                 <article class="file-row">
                     <div>
                         <p class="xs faint">/ SEO</p>
                         <h3 class="h5">Keyword research</h3>
                         <p class="xs mute">Delivered 27 June 2026</p>
-                    </div><button type="button" data-download-sample="Keyword research">Download  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-  <path d="M8 1V15M2 9L8 15L14 9" stroke="#E0CCBB" stroke-width="1.5"/>
-</svg></button>
+                    </div><button type="button" data-download-sample="Keyword research">Download <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <path d="M8 1V15M2 9L8 15L14 9" stroke="#E0CCBB" stroke-width="1.5" />
+                        </svg></button>
                 </article>
                 <article class="file-row">
                     <div>
                         <p class="xs faint">/ Email marketing</p>
                         <h3 class="h5">June campaign report</h3>
                         <p class="xs mute">Delivered 1 July 2026</p>
-                    </div><button type="button" data-download-sample="June campaign report">Download ↓</button>
+                    </div><button type="button" data-download-sample="Keyword research">Download <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <path d="M8 1V15M2 9L8 15L14 9" stroke="#E0CCBB" stroke-width="1.5"></path>
+                        </svg></button>
                 </article>
             </div>
         </div>
