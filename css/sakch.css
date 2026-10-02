@@ -310,3 +310,16 @@ margin: 0px;
             gap: 24px;
         }
 }
+
+@media (min-width:1920){
+.value.v4 {
+    left: calc(var(--u) * 720);
+    top: calc(var(--u) * 1348);
+}
+}
+@media (min-width:1400){
+.value.v4 {
+    left: calc(var(--u) * 720);
+    top: calc(var(--u) * 1390);
+}
+}
