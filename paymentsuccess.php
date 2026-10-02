@@ -15,8 +15,9 @@
             xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
             <path d="M1 8H15M9 14L15 8L9 2" stroke="#E0CCBB" stroke-width="1.5" />
           </svg></a>
-        <button type="button" class="btn btn-s" data-invoice="last"><span>Download invoice</span><img class="arrow"
-            src="assets/arrow.svg" alt=""></button>
+        <button type="button" class="btn btn-s btn_dowm" data-invoice="last"><span>Download invoice</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M1 8H15M9 14L15 8L9 2" stroke="#15120E" stroke-width="1.5"/>
+</svg></button>
       </div>
 
     </div>
