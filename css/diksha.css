@@ -275,7 +275,7 @@ align-self: stretch;
 border: 1px solid var(--brand-sand, #E0CCBB);
 background: var(--brand-sand, #E0CCBB);
 color: var(--brand-warm-black, #15120E);
-
+margin: 0px;
 /* button / regular */
 font-family: "Hanken Grotesk";
 font-size: 18px;
@@ -284,9 +284,6 @@ font-weight: 400;
 line-height: 140%; /* 25.2px */
 }
 
-.btn-1 {
-    margin-top: 8px;
-}
 
 .login-no{
     color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
@@ -468,6 +465,11 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 140%; /* 19.6px */
+}
+
+.arrow-1{
+    width: 16px;
+height: 16px;
 }
 
 @media only screen and (max-device-width: 600px){
@@ -764,7 +766,6 @@ line-height: 160%; /* 28.8px */
     /*signup page*/
     .field-row-in{
         display: flex;
-flex-direction: column;
 align-items: flex-start;
 gap: 12px;
 align-self: stretch;
@@ -895,4 +896,10 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%; /* 19.6px */ */
 }
+}
+
+@media screen and (width < 1920px) {
+    .auth-panel-1{
+        padding: 80px;
+    }
 }

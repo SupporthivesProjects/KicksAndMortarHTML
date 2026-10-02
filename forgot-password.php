@@ -40,7 +40,7 @@
         
         <button type="submit" class="btn-1 btn-p">
             <span>Send reset link</span>
-            <img class="arrow" src="assets/arrow.svg" alt="">
+            <img class="arrow-1" src="assets/arrow.svg" alt="">
         </button>
         <p class="form-status small" role="status" aria-live="polite"></p>
         <p class="login-no faint">Remembered it? <a href="login.php">Back to log in</a>
