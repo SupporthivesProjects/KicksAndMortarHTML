@@ -16,8 +16,8 @@
         <h1 class="h1 ser_head2" data-lines data-hero>Social media management</h1>
         <p class="body mute ser_p2" data-lines data-hero>Content and ads for the platforms your customers use. Three tiers,
           each on a fixed term, with the price on the page.</p>
-        <div class="actions"><a href="#packages" class="btn btn-p" data-go="packages"><span>See packages</span><img
-              class="arrow" src="./img/arrow.svg" alt=""></a><a href="#custom-package" class="btn btn-s"
+        <div class="actions ser_act"><a href="#packages" class="btn btn-p" data-go="packages"><span>See packages</span><img
+              class="arrow" src="./img/arrow.svg" alt=""></a><a href="#custom-package" class="btn btn-s ser_btn_"
             data-go="custom-package"><span>Send a brief</span><img class="arrow" src="./img/arrow.svg" alt=""></a>
         </div>
       </div>
@@ -144,7 +144,7 @@
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                     tabindex="0">
-          <div class="package-grid indent" data-service="social-media">
+          <div class="package-grid indent ser_tab_cont" data-service="social-media">
             <article class="package-card " data-tier="0" data-fade>
               <div class="package-head">
                 <h3 class="h3 ser3_p5">Bronze</h3>
@@ -215,7 +215,7 @@
         </div>
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
                     tabindex="0">
-          <div class="package-grid indent" data-service="social-media">
+          <div class="package-grid indent ser_tab_cont" data-service="social-media">
             <article class="package-card " data-tier="0" data-fade>
               <div class="package-head">
                 <h3 class="h3 ser3_p5">Bronze</h3>
@@ -286,7 +286,7 @@
         </div>
         <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
                     tabindex="0">
-          <div class="package-grid indent" data-service="social-media">
+          <div class="package-grid indent ser_tab_cont" data-service="social-media">
             <article class="package-card " data-tier="0" data-fade>
               <div class="package-head">
                 <h3 class="h3 ser3_p5">Bronze</h3>
@@ -357,7 +357,7 @@
         </div>
         <div class="tab-pane fade" id="contact2-tab-pane" role="tabpanel" aria-labelledby="contact2-tab"
                     tabindex="0">
-          <div class="package-grid indent" data-service="social-media">
+          <div class="package-grid indent ser_tab_cont" data-service="social-media">
             <article class="package-card " data-tier="0" data-fade>
               <div class="package-head">
                 <h3 class="h3 ser3_p5">Bronze</h3>
