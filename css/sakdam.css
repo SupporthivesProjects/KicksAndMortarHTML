@@ -324,13 +324,13 @@ line-height: 160%; /* 32px */
     .ser_nav_btn.active {
         padding: 12px;
     }
-    .ser_outer .ser_inner2 .action {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    .ser_act {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
     }
-    .ser_outer .ser_inner2 .action .btn-s {
-        --bs-btn-padding-x: 0rem;
+    .ser_btn_ {
+        --bs-btn-padding-x: 0rem !important;
     }
 
     .ser_nav_btn {
