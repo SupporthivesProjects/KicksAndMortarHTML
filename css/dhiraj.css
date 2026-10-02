@@ -535,17 +535,9 @@
     /* 22.4px */
 }
 
-.order-summary__title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
-}
 
-.order-summary__title {
-    font-size: 20px;
-}
+
+
 
 /* =========================================
    CART PAGE
@@ -1195,8 +1187,14 @@ line-height: 140%; /* 22.4px */
 }
 
 .account-header {
-    background: url(../img/account-header-mobile.webp);
+    background: url(../img/account-header.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.file-row button{
+    display: flex;
+align-items: center;
+gap: 8px;
 }

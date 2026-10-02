@@ -2,8 +2,8 @@
   <section class="account-header on-dark" data-section data-theme="dark" id="top">
         <div class="media account-bg" data-inner data-speed-inner="0.28">
           <picture>
-            <source media="(max-width: 899px)" srcset="assets/account-header-mobile.webp">
-            </source><img src="assets/account-header.webp" alt="Desert at sunset" decoding="async" fetchpriority="high" data-menubg>
+            <source media="(max-width: 899px)" srcset="./img/account-header-mobile.webp">
+            </source><img src="./img/account-header.webp" alt="Desert at sunset" decoding="async" fetchpriority="high" data-menubg>
           </picture>
         </div>
         <div class="overlay"></div>
