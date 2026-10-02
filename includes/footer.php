@@ -67,6 +67,7 @@
     <script src="uiframe/js/aos.js"></script>
     <script src="uiframe/js/home-js.js"></script>
     <script src="animationjs/motion.js"></script>
+    <script src="animationjs/commerce.js"></script>
     <script>
         const header = document.querySelector('header');
         window.addEventListener('scroll', () => {

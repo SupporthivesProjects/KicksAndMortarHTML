@@ -33,12 +33,11 @@
               <input name="email" id="f-email" required autocomplete="email" type="email" placeholder="john.smith@email.com">
             </div>
         </div>
-    </form>
-    
-    <div class="an-div">
+
+        <div class="an-div">
         
         
-        <button type="submit" class="btn-1 btn-p">
+        <button type="submit" class="btn btn-1 btn-p">
             <span>Send reset link</span><span class="arrowstyle">&rarr;</span>
             <img class="arrow-1" src="assets/arrow.svg" alt="">
         </button>
@@ -46,6 +45,9 @@
         <p class="login-no faint">Remembered it? <a href="login.php">Back to log in</a>
     </p>
 </div>
+    </form>
+    
+    
 </div>
   </div>
 </section>
@@ -53,5 +55,34 @@
    <img src="assets/original-8a8a96ad4952a91c.webp" alt="">
  </div>
  <div class="overlay"></div>
+
+
+
+
+ <dialog id="kmDialog" class="km-dialog">
+    <button class="dialog-close" type="button" aria-label="Close dialog">×</button>
+
+    <div class="result-mark">
+        <img src="assets/result-check.svg" alt="">
+    </div>
+
+    <h2 id="dialogTitle">Check your inbox.</h2>
+
+    <p>
+        This is the reset-email preview. No email has been sent by this static build.
+    </p>
+
+    <div class="dialog-actions">
+        <a href="login.php" class="btn btn-p">
+            <span>Back to log in</span>
+            <img class="arrow" src="assets/arrow.svg" alt="">
+        </a>
+
+        <a href="reset-password.php" class="btn btn-s">
+            <span>Preview reset form</span>
+            <img class="arrow" src="assets/arrow.svg" alt="">
+        </a>
+    </div>
+</dialog>
 
 <?php include 'includes/footer.php'; ?>

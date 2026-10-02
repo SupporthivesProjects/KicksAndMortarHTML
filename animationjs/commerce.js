@@ -46,7 +46,7 @@
     }
 
     function empty(title, copy) {
-        return `<div class="empty-box"><h2 class="h4">${title}</h2><p class="body mute">${copy}</p>${btn('See the services','index.html#services')}</div>`;
+        return `<div class="empty-box"><h2 class="h4">${title}</h2><p class="body mute">${copy}</p>${btn('See the services','index.php#services')}</div>`;
     }
     const termText = x => x.term === 'oneoff' ? 'One-off project' : `${x.term} month term`;
 
@@ -102,7 +102,7 @@
             return;
         }
         S.add(service, Number(tier), selectedTerm);
-        const el = dialog('Added to your cart', `${C[service].name}, ${C[service].tiers[tier].name} package. ${selectedTerm==='oneoff'?'One-off project.':selectedTerm+' month term.'}`, btn('View cart', 'cart.html') + btn('Keep browsing', null, 'data-dismiss', true));
+        const el = dialog('Added to your cart', `${C[service].name}, ${C[service].tiers[tier].name} package. ${selectedTerm==='oneoff'?'One-off project.':selectedTerm+' month term.'}`, btn('View cart', 'cart.php') + btn('Keep browsing', null, 'data-dismiss', true));
         $('[data-dismiss]', el).onclick = () => el.close();
     }));
 
@@ -110,7 +110,7 @@
         const count = S.state.cart.length;
         $$('.cart sup').forEach(el => el.textContent = count);
         $$('a.login').forEach(el => {
-            el.href = S.state.signedIn ? 'account.html' : 'login.html';
+            el.href = S.state.signedIn ? 'account.php' : 'login.php';
             el.textContent = S.state.signedIn ? 'Account' : 'Log in';
         });
     }
@@ -125,12 +125,12 @@
                 tier = svc.tiers[x.tier];
             return `<article class="cart-line"><div class="media"><picture>${['seo','ppc'].includes(x.service)?`<source media="(max-width: 899px)" srcset="assets/cart-${x.service}-mobile.webp">`:''}<img src="${svc.image}" alt="${esc(svc.name)}"></picture></div><div class="cart-line-info"><div class="cart-line-head"><h2 class="h4">${esc(svc.name)}, ${tier.name} package</h2><div class="cart-line-price h3">${M(S.price(x))}<button type="button" data-remove="${x.service}">Remove</button></div></div><p class="cart-term">${termText(x)}</p><div class="cart-includes">${tier.figures.map(f=>`<p>${esc(f.join(' ').replace('keywords and phrases targeted','keywords and phrases'))}</p>`).join('')}${x.service==='ppc'?`<p>${M(config.adSpendPerMonth.ppc[x.tier],0)} ad spend included every month</p>`:''}</div>${svc.oneOff?'':terms(x.term,x.service,x.tier)}</div></article>`;
         }).join('') : empty('Your cart is empty.', 'Choose a service and a package to get started.');
-        $('#cartSummary').innerHTML = `<h2 class="h5">Order summary</h2>${summaryLines(items)}<div class="summary-line subtotal-line"><span>Subtotal</span><strong>${M(total.subtotal)}</strong></div><div class="summary-total"><span>Total at checkout</span><strong>${M(total.total)}</strong></div>${items.length?btn('Continue to checkout','checkout.html'):btn('Browse services','index.html#services')}${pay}<div class="payment-notes"><p>Fixed terms. Nothing renews on its own.</p><p>Add a discount code at checkout.</p><p>Pay on a secure page by Visa or Mastercard.</p></div>`;
+        $('#cartSummary').innerHTML = `<h2 class="h5">Order summary</h2>${summaryLines(items)}<div class="summary-line subtotal-line"><span>Subtotal</span><strong>${M(total.subtotal)}</strong></div><div class="summary-total"><span>Total at checkout</span><strong>${M(total.total)}</strong></div>${items.length?btn('Continue to checkout','checkout.php'):btn('Browse services','index.php#services')}${pay}<div class="payment-notes"><p>Fixed terms. Nothing renews on its own.</p><p>Add a discount code at checkout.</p><p>Pay on a secure page by Visa or Mastercard.</p></div>`;
         const candidates = Object.keys(C).filter(k => !items.some(x => x.service === k)).slice(0, 4);
         $('#upsellGrid').innerHTML = candidates.map(k => {
             const s = C[k],
                 min = Math.min(...Object.values(s.tiers[0].prices));
-            return `<a class="upsell-card" href="${k}.html"><div class="media"><img loading="lazy" src="${s.image}" alt="${esc(s.name)}"></div><div><h3>${esc(s.name)}</h3><small>From ${M(min,0)}</small></div></a>`;
+            return `<a class="upsell-card" href="${k}.php"><div class="media"><img loading="lazy" src="${s.image}" alt="${esc(s.name)}"></div><div><h3>${esc(s.name)}</h3><small>From ${M(min,0)}</small></div></a>`;
         }).join('');
         layout();
     }
@@ -144,7 +144,7 @@
             el.innerHTML = empty('Your cart is empty.', 'Choose a package before continuing to checkout.');
             return;
         }
-        el.innerHTML = `<h2 class="h4">Your order</h2>${summaryLines(items)}<div class="discount"><label for="discountCode">Discount code<input id="discountCode" value="${esc(S.state.discount)}" autocomplete="off"></label><button type="button" data-discount class="${S.state.discount?'is-applied':''}">${S.state.discount?'✓ Applied':'Apply'}</button></div><p class="discount-status small" role="status"></p><div class="summary-line subtotal-line"><span>Subtotal</span><strong>${M(t.subtotal)}</strong></div>${t.discount?`<div class="summary-line"><span>Discount, ${esc(S.state.discount)} (${config.discounts[S.state.discount].percent}%)</span><strong>${M(t.discount)} off</strong></div>`:''}<div class="summary-total"><span>Total today</span><strong>${M(t.total)}</strong></div><label class="consent"><input name="consent" type="checkbox" required><span>I agree to the <a href="terms.html">Terms and Conditions</a> and <a href="privacy.html">Privacy Policy</a>.</span></label><div class="captcha-slot" data-captcha><label><input name="preview-check" type="checkbox">I’m not a robot</label><span>reCAPTCHA<br><small>Preview only</small></span></div><div class="secure-copy"><div class="secure-head"><strong>Pay on a secure page</strong>${pay}</div><p>You continue to our payment provider’s secure page to pay by Visa or Mastercard. We never see or store your card details.</p></div><button type="submit" class="btn btn-p"><span>Continue to secure payment</span><img class="arrow" src="assets/arrow.svg" alt=""></button><p class="form-status small" role="status"></p>`;
+        el.innerHTML = `<h2 class="h4">Your order</h2>${summaryLines(items)}<div class="discount"><label for="discountCode">Discount code<input id="discountCode" value="${esc(S.state.discount)}" autocomplete="off"></label><button type="button" data-discount class="${S.state.discount?'is-applied':''}">${S.state.discount?'✓ Applied':'Apply'}</button></div><p class="discount-status small" role="status"></p><div class="summary-line subtotal-line"><span>Subtotal</span><strong>${M(t.subtotal)}</strong></div>${t.discount?`<div class="summary-line"><span>Discount, ${esc(S.state.discount)} (${config.discounts[S.state.discount].percent}%)</span><strong>${M(t.discount)} off</strong></div>`:''}<div class="summary-total"><span>Total today</span><strong>${M(t.total)}</strong></div><label class="consent"><input name="consent" type="checkbox" required><span>I agree to the <a href="terms.php">Terms and Conditions</a> and <a href="privacy.php">Privacy Policy</a>.</span></label><div class="captcha-slot" data-captcha><label><input name="preview-check" type="checkbox">I’m not a robot</label><span>reCAPTCHA<br><small>Preview only</small></span></div><div class="secure-copy"><div class="secure-head"><strong>Pay on a secure page</strong>${pay}</div><p>You continue to our payment provider’s secure page to pay by Visa or Mastercard. We never see or store your card details.</p></div><button type="submit" class="btn btn-p"><span>Continue to secure payment</span><img class="arrow" src="assets/arrow.svg" alt=""></button><p class="form-status small" role="status"></p>`;
         layout();
     }
     document.addEventListener('click', e => {
@@ -170,7 +170,7 @@
         }
         if (e.target.closest('[data-signout]')) {
             S.signOut();
-            location.href = 'login.html';
+            location.href = 'login.php';
         }
     });
 
@@ -225,11 +225,11 @@
             const modal = dialog('Payment preview', 'No payment provider is connected to this build. No charge will be made. Choose a result to review the completed journey.', btn('Preview successful payment', null, 'data-preview-success') + btn('Preview declined payment', null, 'data-preview-error', true));
             $('[data-preview-success]', modal).onclick = () => {
                 S.completePreview(profile);
-                location.href = 'payment-complete.html';
+                location.href = 'payment-complete.php';
             };
             $('[data-preview-error]', modal).onclick = () => {
                 S.setProfile(profile);
-                location.href = 'payment-error.html';
+                location.href = 'payment-error.php';
             };
             return;
         }
@@ -315,10 +315,10 @@
         }
         if (config.mode === 'preview' || !config.apiBase) {
             if (kind === 'forgot-password') {
-                dialog('Check your inbox.', 'This is the reset-email preview. No email has been sent by this static build.', btn('Back to log in', 'login.html') + btn('Preview reset form', 'reset-password.html', '', true));
+                dialog('Check your inbox.', 'This is the reset-email preview. No email has been sent by this static build.', btn('Back to log in', 'login.php') + btn('Preview reset form', 'reset-password.php', '', true));
             } else if (kind === 'reset-password') {
                 form.reset();
-                dialog('Password updated.', 'This is the confirmation preview. No password has been changed or saved.', btn('Back to log in', 'login.html'));
+                dialog('Password updated.', 'This is the confirmation preview. No password has been changed or saved.', btn('Back to log in', 'login.php'));
             } else {
                 const el = dialog(kind === 'signup' ? 'Account preview' : 'Log in preview', 'This build uses a local demonstration account. Your password is never stored or sent.', btn('Explore your account', null, 'data-open-account'));
                 $('[data-open-account]', el).onclick = () => {
@@ -327,7 +327,7 @@
                         lastName: data.lastName || 'Smith',
                         email: data.email
                     });
-                    location.href = 'account.html';
+                    location.href = 'account.php';
                 };
             }
         } else {
@@ -343,10 +343,10 @@
                 });
                 if (kind === 'login' || kind === 'signup') {
                     S.signIn(result.profile);
-                    location.href = 'account.html';
+                    location.href = 'account.php';
                 } else {
                     form.reset();
-                    dialog(kind === 'forgot-password' ? 'Check your inbox.' : 'Password updated.', kind === 'forgot-password' ? 'If an account uses this email address, a reset link is on its way.' : 'Your password has been updated.', btn('Back to log in', 'login.html'));
+                    dialog(kind === 'forgot-password' ? 'Check your inbox.' : 'Password updated.', kind === 'forgot-password' ? 'If an account uses this email address, a reset link is on its way.' : 'Your password has been updated.', btn('Back to log in', 'login.php'));
                 }
             } catch (err) {
                 status.textContent = err.message;
