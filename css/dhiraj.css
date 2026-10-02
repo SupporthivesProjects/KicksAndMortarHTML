@@ -1198,3 +1198,13 @@ line-height: 140%; /* 22.4px */
 align-items: center;
 gap: 8px;
 }
+
+.checkout_heading{
+    color: var(--brand-warm-black, #15120E);
+font-family: "Hanken Grotesk";
+font-size: 72px;
+font-style: normal;
+font-weight: 300;
+line-height: 120%; /* 86.4px */
+letter-spacing: -1.44px;
+}

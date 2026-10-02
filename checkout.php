@@ -5,7 +5,7 @@
       <p>/ Checkout</p>
       <p class="ar" lang="ar" dir="rtl">الدفع</p>
     </div>
-    <h1 class="h1" data-lines data-hero>Checkout</h1>
+    <h1 class="h1 checkout_heading " data-lines data-hero>Checkout</h1>
   </div>
   <div class="purchase-body indent checkout-layout">
 
