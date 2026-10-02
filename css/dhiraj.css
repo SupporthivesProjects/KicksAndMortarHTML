@@ -1212,3 +1212,10 @@ letter-spacing: -1.44px;
 .btn_dowm{
     padding: 0px 0px 10px;
 }
+
+.orders-table button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
