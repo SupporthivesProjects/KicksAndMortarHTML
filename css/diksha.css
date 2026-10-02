@@ -327,7 +327,6 @@ text-underline-position: from-font;
 }
 
 .field-row{
-flex-direction: column;
 align-items: flex-start;
 gap: 24px;
 align-self: stretch;
@@ -899,4 +898,14 @@ line-height: 140%; /* 19.6px */ */
     .auth-panel-1{
         padding: 80px;
     }
+}
+
+.an-div .btn-1{
+    justify-content: flex-start;
+}
+
+.an-div .btn-1 .arrow-1{
+    width: 17px;
+    height: 16px;
+    filter: brightness(0);
 }
