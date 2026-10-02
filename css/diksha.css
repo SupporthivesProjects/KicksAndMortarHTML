@@ -284,10 +284,6 @@ font-weight: 400;
 line-height: 140%; /* 25.2px */
 }
 
-.btn-1 {
-    margin-top: 8px;
-}
-
 .login-no{
     color: var(--brand-sand-70, rgba(224, 204, 187, 0.70));
 
@@ -466,6 +462,12 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%; /* 19.6px */
 }
+
+.arrow-1{
+    width: 16px;
+height: 16px;
+}
+
 
 @media only screen and (max-device-width: 600px){
 
@@ -905,7 +907,7 @@ line-height: 140%; /* 19.6px */ */
 }
 
 .an-div .btn-1 .arrow-1{
-    width: 17px;
+    width: 16px;
     height: 16px;
     filter: brightness(0);
 }

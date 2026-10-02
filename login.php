@@ -36,7 +36,7 @@
       <div class="an-div">
         
         <button type="submit" class="btn-1 btn-p">
-          <span>Log in</span><img class="arrow" src="img/arrow.svg" alt="">
+          <span>Log in</span><img class="arrow-1" src="img/arrow.svg" alt="">
         </button>
         <p class="login-no faint">New here? <a href="signup.php">Create an account</a></p>
       </div>
