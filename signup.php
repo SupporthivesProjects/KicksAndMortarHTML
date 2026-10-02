@@ -74,7 +74,7 @@
             
             <div class="an-div">
                 <button type="submit" class="btn-1 btn-p">
-                    <span>Create account</span>
+                    <span>Create account</span><span class="arrowstyle">&rarr;</span>
                     <img class="arrow-1" src="assets/arrow.svg" alt="">
                 </button>
                 <p class="login-no faint">Already have an account? <a href="login.php">Log in</a>

@@ -40,7 +40,7 @@
     </div>
     <button type="submit" class="btn-1 btn-p">
         <span>Update password</span>
-        <img class="arrow-1" src="assets/arrow.svg" alt="">
+        <span class="arrowstyle">&rarr;</span>
     </button>
     <p class="form-status small" role="status" aria-live="polite"></p>
     <p class="small faint"></p>

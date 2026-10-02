@@ -39,7 +39,7 @@
         
         
         <button type="submit" class="btn-1 btn-p">
-            <span>Send reset link</span>
+            <span>Send reset link</span><span class="arrowstyle">&rarr;</span>
             <img class="arrow-1" src="assets/arrow.svg" alt="">
         </button>
         <p class="form-status small" role="status" aria-live="polite"></p>
