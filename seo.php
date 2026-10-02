@@ -157,7 +157,7 @@
   </div>
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-      <div class="package-grid indent" data-service="seo">
+      <div class="package-grid indent ser_tab_cont" data-service="seo">
         <article class="package-card " data-tier="0" data-fade>
           <div class="package-head">
             <h3 class="h3 ser3_p5">Bronze</h3>
@@ -226,7 +226,7 @@
       </div>
     </div>
     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-      <div class="package-grid indent" data-service="seo">
+      <div class="package-grid indent ser_tab_cont" data-service="seo">
         <article class="package-card " data-tier="0" data-fade>
           <div class="package-head">
             <h3 class="h3 ser3_p5">Bronze</h3>
@@ -295,7 +295,7 @@
       </div>
     </div>
     <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-      <div class="package-grid indent" data-service="seo">
+      <div class="package-grid indent ser_tab_cont" data-service="seo">
         <article class="package-card " data-tier="0" data-fade>
           <div class="package-head">
             <h3 class="h3 ser3_p5">Bronze</h3>
@@ -364,7 +364,7 @@
       </div>
     </div>
     <div class="tab-pane fade" id="contact2-tab-pane" role="tabpanel" aria-labelledby="contact2-tab" tabindex="0">
-      <div class="package-grid indent" data-service="seo">
+      <div class="package-grid indent ser_tab_cont" data-service="seo">
         <article class="package-card " data-tier="0" data-fade>
           <div class="package-head">
             <h3 class="h3 ser3_p5">Bronze</h3>
@@ -469,7 +469,7 @@
         class="consent"><input class="ser5_input" type="checkbox" name="consent" required><span>I agree to the <a
             href="terms.html">Terms and Conditions</a> and <a href="privacy.html">Privacy Policy</a>.</span></label>
       <img class="img-fluid ser_captcha" src="./img/ser_recaptach.png" alt="">
-      <button type="submit" class="btn btn-p"><span>Send brief</span><img class="arrow" src="assets/arrow.svg"
+      <button type="submit" class="btn btn-p"><span>Send brief</span><img class="arrow" src="./img/arrow.svg"
           alt=""></button>
       <p class="form-status small ser3_p5" role="status" aria-live="polite"></p>
     </form>

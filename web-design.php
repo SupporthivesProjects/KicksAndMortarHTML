@@ -113,7 +113,7 @@
           </div>
         </div>
       </div>
-      <div class="package-grid indent" data-service="web-design">
+      <div class="package-grid indent ser_tab_cont" data-service="web-design">
         <article class="package-card " data-tier="0" data-fade>
           <div class="package-head">
             <h3 class="h3 ser3_P5">Bronze</h3>
